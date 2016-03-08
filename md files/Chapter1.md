@@ -53,7 +53,7 @@ Calidad: Grado en el cual un componente, sisetma o porceso satisface requisitos 
 ---
 ## Tipos de Aseguramiento de la calidad
 
-### QA Constructivo
+### QA Constructivo - Gestion de calidad
 > Tiene como objetivo prevenir defectos
 
 **Consigna del QA constructivo**
@@ -78,7 +78,31 @@ Calidad: Grado en el cual un componente, sisetma o porceso satisface requisitos 
 		* Entornos de Desarrollo Integrado (IDE)
 
 
-### QA Analitico
+### QA Analitico - Verificacion y pruebas
 > Tiene como objectivo detectar defectos
 
-
+**Consigna del QA analitco**
+
+* Los defectos deben ser detectados tan pronto como sea posible
+
+#### Tipos de QA analitico
+* **Estatico**: Son llevadas a cabo sin la ejecucion del programa
+	* Revisiones / revisiones guidadas
+	* Analisis del flujo de control
+	* Analisis del fluoj de datos
+	* Metricas de compilador / analizador 		
+
+* **Dinamico**: Se necesita la ejecucion del programa.
+	* **Caja Negra:**
+		* Particiones equivalencia
+		* Analisis de valores limite
+		* Tabla de decision
+		* Pruebas de transicion de estado
+		* Analisis de caso de uso 
+		 	
+	* **Caja Blanca:**
+	
+		* Cobertura de sentencia
+		* Cobertura de Rama
+		* Cobertura de condicion
+		* Cobertura de camino
