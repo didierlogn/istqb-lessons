@@ -51,6 +51,16 @@ Calidad: Grado en el cual un componente, sisetma o porceso satisface requisitos 
 	* Portabilidad 	
 
 ---
+
+La norma **ISO 2501** añade dos atributos mas:
+
+* Compatibilidad
+* Seguridad
+	* Integridad
+	* Disponibilidad
+	* Accesibilidad
+
+---
 ## Tipos de Aseguramiento de la calidad
 
 ### QA Constructivo - Gestion de calidad
@@ -93,16 +103,114 @@ Calidad: Grado en el cual un componente, sisetma o porceso satisface requisitos 
 	* Metricas de compilador / analizador 		
 
 * **Dinamico**: Se necesita la ejecucion del programa.
-	* **Caja Negra:**
+	* **Caja Negra - Pruebas de Especificación**
 		* Particiones equivalencia
 		* Analisis de valores limite
 		* Tabla de decision
 		* Pruebas de transicion de estado
 		* Analisis de caso de uso 
 		 	
-	* **Caja Blanca:**
+	* **Caja Blanca - Pruebas estructurales - Pruebas basadas en el flujo de control**
 	
 		* Cobertura de sentencia
 		* Cobertura de Rama
 		* Cobertura de condicion
-		* Cobertura de camino
+		* Cobertura de camino
+
+---
+
+## Objectivos de las pruebas
+
+* Generar confianza con respecto a la calidad
+* Generar informacion para la toma de decisiones
+* Detectar defectos - Adquirir conocimientos sobre los defectos del objeto de prueba
+* Confirmacion de la funcionalidad
+* Prevencion de Defectos
+
+---
+### Criterios de salida
+* No encontrar mas defectos
+* Pruebas basadas en riesgos
+* Pruebas basadas en tiempo y presupuesto
+
+### Casos de prueba
+Un buen caso de prueba debe contener las siguientes secciones(**Estandar IEEE 829**)
+
+* Precondiciones
+* Valores de entrada
+* Resultados Esperados
+* Poscondiciones
+* Un Identificador
+* Dependencias con otros test cases
+* Referencia al requisito probado
+* Prioridad
+* Forma de ejecutar la prueba, pasos para ejecutarla
+
+### Base de Pruebas
+Conjunto de documentos que definen los requisitos del objeto de prueba
+
+
+## Actividades de Proceso de pruebas
+* Planeacion y control
+* Seleccion de condiciones de prueba
+* Diseño y ejecucion de pruebas
+* Comprobacion de resultados
+* Generacion de informes
+* Finalizacion y actividades de cierre
+
+## Terminos de desarrollo de software
+* Depuracion
+	* Proceso de encontrar,analizar y solucionar el defecto  
+* Requisito
+	* Condicion o capacidad necesario sistema cumpla con lo establecido
+* Revision
+	* Evaluacion de un producto o estado de un proyecto para detectar diferencias con los resultados planificados.
+
+# Depuracion
+La depuracion consiste en:
+
+* Encontrar la raiz del defecto
+* Corregir el defecto 	
+
+Las pruebas y depuracion tienen el siguiente flujo:
+
+```
+Prueba -> Depuracion[Encontrar la causa raiz - Corregir defecto] -> Re Test 
+```
+
+---
+## Principios del proceso de prueba
+
+* **El proceso de pruebas demuestra la presencia de defectos**
+	*  No detecta la ausencia de los mismos
+* **Las pruebas exaustivas no existen**
+	* Solo en casos triviales, por lo que se debe realizar un analisis de riesgo y prioridades
+	* Genera una explocion de casos de prueba
+	* Por lo que se toma una **Prueba de Muestra(Sample Test)**,que es un subconjunto de todos los posibles valores de entrada
+* **Pruebas Tempranas**
+	* Cuanto mas rapido se encuentre un defecto menor es el costo de correccion. 
+	* La preparacion de la prueba tambien consume tiempo
+* **Agrupacion de defectos** 
+	*	 Donde se encontro un defecto es muy probable que si se sigue probando se contraran mas defectos
+* **Paradoja del Pesticida**
+	* La repeticon de las mismas pruebas con los mismos valores de entrada no van a encontrar mas errores
+	* Las pruebas deben ser evaluadas constantemente
+* **Las pruebas dependen del contexto** 
+	* Todo depende de lo que se vaya a probar, no es lo mismo probar un software bancario a probar un sitio web
+* **La falasia de aunsencia de errores**
+	* El proceso de prueba encontrara los fallos mas importantes del objeto de prueba, pero talvez no los encuentre todos	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -20,7 +20,9 @@
     </section>
 
     <section class="main-content">
-      <h2 id="toc_0">Capitulo 1</h2>
+      
+
+<h2 id="toc_0">Capitulo 1</h2>
 
 <h3 id="toc_1">Terminos</h3>
 
@@ -100,6 +102,21 @@
 
 <hr>
 
+<p>La norma <strong>ISO 2501</strong> añade dos atributos mas:</p>
+
+<ul>
+<li>Compatibilidad</li>
+<li>Seguridad
+
+<ul>
+<li>Integridad</li>
+<li>Disponibilidad</li>
+<li>Accesibilidad</li>
+</ul></li>
+</ul>
+
+<hr>
+
 <h2 id="toc_5">Tipos de Aseguramiento de la calidad</h2>
 
 <h3 id="toc_6">QA Constructivo - Gestion de calidad</h3>
@@ -163,7 +180,7 @@
 <li><p><strong>Dinamico</strong>: Se necesita la ejecucion del programa.</p>
 
 <ul>
-<li><p><strong>Caja Negra:</strong></p>
+<li><p><strong>Caja Negra - Pruebas de Especificación</strong></p>
 
 <ul>
 <li>Particiones equivalencia</li>
@@ -172,14 +189,146 @@
 <li>Pruebas de transicion de estado</li>
 <li>Analisis de caso de uso </li>
 </ul></li>
-<li><p><strong>Caja Blanca:</strong></p>
+<li><p><strong>Caja Blanca - Pruebas estructurales - Pruebas basadas en el flujo de control</strong></p>
 
 <ul>
 <li>Cobertura de sentencia</li>
 <li>Cobertura de Rama</li>
 <li>Cobertura de condicion</li>
-<li>Cobertura de camino</li>
+<li>Cobertura de camino</li>
 </ul></li>
+</ul></li>
+</ul>
+
+<hr>
+
+<h2 id="toc_9">Objectivos de las pruebas</h2>
+
+<ul>
+<li>Generar confianza con respecto a la calidad</li>
+<li>Generar informacion para la toma de decisiones</li>
+<li>Detectar defectos - Adquirir conocimientos sobre los defectos del objeto de prueba</li>
+<li>Confirmacion de la funcionalidad</li>
+<li>Prevencion de Defectos</li>
+</ul>
+
+<hr>
+
+<h3 id="toc_10">Criterios de salida</h3>
+
+<ul>
+<li>No encontrar mas defectos</li>
+<li>Pruebas basadas en riesgos</li>
+<li>Pruebas basadas en tiempo y presupuesto</li>
+</ul>
+
+<h3 id="toc_11">Casos de prueba</h3>
+
+<p>Un buen caso de prueba debe contener las siguientes secciones(<strong>Estandar IEEE 829</strong>)</p>
+
+<ul>
+<li>Precondiciones</li>
+<li>Valores de entrada</li>
+<li>Resultados Esperados</li>
+<li>Poscondiciones</li>
+<li>Un Identificador</li>
+<li>Dependencias con otros test cases</li>
+<li>Referencia al requisito probado</li>
+<li>Prioridad</li>
+<li>Forma de ejecutar la prueba, pasos para ejecutarla</li>
+</ul>
+
+<h3 id="toc_12">Base de Pruebas</h3>
+
+<p>Conjunto de documentos que definen los requisitos del objeto de prueba</p>
+
+<h2 id="toc_13">Actividades de Proceso de pruebas</h2>
+
+<ul>
+<li>Planeacion y control</li>
+<li>Seleccion de condiciones de prueba</li>
+<li>Diseño y ejecucion de pruebas</li>
+<li>Comprobacion de resultados</li>
+<li>Generacion de informes</li>
+<li>Finalizacion y actividades de cierre</li>
+</ul>
+
+<h2 id="toc_14">Terminos de desarrollo de software</h2>
+
+<ul>
+<li>Depuracion
+
+<ul>
+<li>Proceso de encontrar,analizar y solucionar el defecto<br></li>
+</ul></li>
+<li>Requisito
+
+<ul>
+<li>Condicion o capacidad necesario sistema cumpla con lo establecido</li>
+</ul></li>
+<li>Revision
+
+<ul>
+<li>Evaluacion de un producto o estado de un proyecto para detectar diferencias con los resultados planificados.</li>
+</ul></li>
+</ul>
+
+<h1 id="toc_15">Depuracion</h1>
+
+<p>La depuracion consiste en:</p>
+
+<ul>
+<li>Encontrar la raiz del defecto</li>
+<li>Corregir el defecto<br></li>
+</ul>
+
+<p>Las pruebas y depuracion tienen el siguiente flujo:</p>
+
+<div><pre><code class="language-none">Prueba -&gt; Depuracion[Encontrar la causa raiz - Corregir defecto] -&gt; Re Test </code></pre></div>
+
+<hr>
+
+<h2 id="toc_16">Principios del proceso de prueba</h2>
+
+<ul>
+<li><strong>El proceso de pruebas demuestra la presencia de defectos</strong>
+
+<ul>
+<li> No detecta la ausencia de los mismos</li>
+</ul></li>
+<li><strong>Las pruebas exaustivas no existen</strong>
+
+<ul>
+<li>Solo en casos triviales, por lo que se debe realizar un analisis de riesgo y prioridades</li>
+<li>Genera una explocion de casos de prueba</li>
+<li>Por lo que se toma una <strong>Prueba de Muestra(Sample Test)</strong>,que es un subconjunto de todos los posibles valores de entrada</li>
+</ul></li>
+<li><strong>Pruebas Tempranas</strong>
+
+<ul>
+<li>Cuanto mas rapido se encuentre un defecto menor es el costo de correccion. </li>
+<li>La preparacion de la prueba tambien consume tiempo</li>
+</ul></li>
+<li><strong>Agrupacion de defectos</strong> 
+
+<ul>
+<li>   Donde se encontro un defecto es muy probable que si se sigue probando se contraran mas defectos</li>
+</ul></li>
+<li><strong>Paradoja del Pesticida</strong>
+
+<ul>
+<li>La repeticon de las mismas pruebas con los mismos valores de entrada no van a encontrar mas errores</li>
+<li>Las pruebas deben ser evaluadas constantemente</li>
+</ul></li>
+<li><strong>Las pruebas dependen del contexto</strong> 
+
+<ul>
+<li>Todo depende de lo que se vaya a probar, no es lo mismo probar un software bancario a probar un sitio web</li>
+</ul></li>
+<li><strong>La falasia de aunsencia de errores</strong>
+
+<ul>
+<li>El proceso de prueba encontrara los fallos mas importantes del objeto de prueba, pero talvez no los encuentre todos<br></li>
 </ul></li>
 </ul>
 
