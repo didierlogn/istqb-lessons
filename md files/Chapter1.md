@@ -151,6 +151,11 @@ Conjunto de documentos que definen los requisitos del objeto de prueba
 
 
 ## Actividades de Proceso de pruebas
+```
+Cada fase del proceso de pruebas es concurrente con las fases del proceso de desarrollo
+```
+
+---
 * Planeacion y control
 * Seleccion de condiciones de prueba
 * Diseño y ejecucion de pruebas
@@ -158,6 +163,71 @@ Conjunto de documentos que definen los requisitos del objeto de prueba
 * Generacion de informes
 * Finalizacion y actividades de cierre
 
+---
+* Planeacion y control 
+* Analisis y diseño de pruebas
+* Implementacion y ejecucion de pruebas
+* Evaluacion de resultados y genracion de informes - Evaluacion de criterios de salida e informes
+* Actividades de cierre de pruebas
+
+---
+### Planeacion y control
+#### Planeacion
+Define los objectivos de las pruebas y la especificacion de las actividades de prueba
+
+**Objetivos**
+
+* Determinar el alcance
+* Identificar los objectivos de las pruebas y criterios de salida
+* Determinar el enfoque de la prueba
+* Implementar el metodo de prueba / Estrategia de pruebas 
+* Manejar los recursos necesarios para las pruebas. personal, entorno de prueba, presupuestos
+
+#### Control
+Es una actividad constante que verifica el avance real con respecto a lo planeado, informa sobre desviaciones e implica la adopcion de medidas para cumplir los objetivos planeados.
+Dado al control se puede cambiar el **plan maestro de pruebas ( Master Test Plan - Test Plan)** para adecuarlo a las necesidades
+
+> **Plan maestro de pruebas - Master Test Plan - Test Plan**
+>>Documento que define los alcances, el enfoque, los recursos, el calendario de actividades, los items que se van a probar y los que no se van a probar 
+
+> **Estrategia de pruebas - Test Strategy**
+> > Escripcion a alto nivel de los **niveles de prueba** y las pruebas asociadas a ellos
+
+> **Enfoque de Pruebas - Test approach**
+> >Es la implementacion de de la estrategia de pruebas para un proyecto en especifico. Contiene las decisiones tomadas para cada objectivo, analisis del riesgo, puntos de inicio del proceso de prueba, tecnicas del diseño de prueba, criterios de salida y tipo de prueba a ejecutar
+
+> **Criterios de salida**
+> > Conjunto de condiciones definidas que permiten establecer que una tarea en especifico esta concluida
+
+### Analisis y diseño de pruebas
+Tiene como finalidad convertir los objectivos de las pruebas en casos de prueba
+
+**Tareas principales**
+
+* Analizar la base de prueba
+* Analizar la testeabilidad 
+* Identificar y priorizar las condiciones de prueba
+* Disenar y priorizar casos de prueba y condiciones de prueba a alto nivel
+* Identificar los datos de prueba para los casos de prueba - (test data)
+* Diseñar la configuracion del entorno de pruebas (ambiente de pruebas - cama de pruebas (test-bed)) - Infraestructura, herramientas de prueba
+* Crear la trazabiidad entre los casos de prueba y la base de prueba (requerimientos) 
+
+> **Datos de prueba**
+> > Datos que necesita una prueba para ser ejecutada
+> 
+> **Datos de entrada**
+> >Parametro de entrada que toma una componente para ejecutarse
+> 
+> **Cobertura de pruebas**
+> > Porcentaje de codigo probado por el set de pruebas
+> 
+> **Oraculo de pruebas - Test oracle**
+> > Fuente que permite comprarar resultados anteriores con los obtenidos durante las pruebas
+
+---
+> # - ---------Voy por aca --------
+
+---
 ## Terminos de desarrollo de software
 * Depuracion
 	* Proceso de encontrar,analizar y solucionar el defecto  
