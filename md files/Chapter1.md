@@ -1,4 +1,4 @@
-## Capitulo 1
+# Capitulo 1
 
 ### Terminos
 Bug  |  Defecto  |  Error  |  Fallo  |  Calidad  |  Riesgo
@@ -6,20 +6,21 @@ Bug  |  Defecto  |  Error  |  Fallo  |  Calidad  |  Riesgo
 
 ---
 
-```	
-Error: Accion Humana que produce un resultado incorrecto ( IEEE 610 )
-========================================
-```
-```
-Defecto: Componente que puede causar el fallo en el desempeño de las funciones requeridas
-========================================
-```
-```	
-Fallo: Manifestacion fisica o funcional de un defecto
-========================================
-```
+	
+> **Error**:
+> > Accion Humana que produce un resultado incorrecto ( IEEE 610 )
+
+
+> **Defecto**:
+> > Componente que puede causar el fallo en el desempeño de las funciones requeridas
+
+
+> **Fallo**:
+>> Manifestacion fisica o funcional de un defecto
+
+
 ---
-### Papel del proceso de pruebas
+## Papel del proceso de pruebas
 * Mejora la calidad del producto de Software
 * Reduce el riesgo de detectar errores
 * Permite satisfacer compromisos
@@ -40,7 +41,7 @@ Calidad: Grado en el cual un componente, sisetma o porceso satisface requisitos 
 ```
 
 ---
-### Tipos de pruebas ( *ISO 9126* )
+# Tipos de pruebas ( *ISO 9126* )
 * **Funcionales**
 	* Funcionalidad 	
 * **No Funcionales**
@@ -61,10 +62,13 @@ La norma **ISO 2501** añade dos atributos mas:
 	* Accesibilidad
 
 ---
-## Tipos de Aseguramiento de la calidad
+# Tipos de Aseguramiento de la calidad
 
-### QA Constructivo - Gestion de calidad
-> Tiene como objetivo prevenir defectos
+## QA Constructivo - Gestion de calidad
+
+```
+ Tiene como objetivo prevenir defectos
+```
 
 **Consigna del QA constructivo**
 
@@ -88,9 +92,11 @@ La norma **ISO 2501** añade dos atributos mas:
 		* Entornos de Desarrollo Integrado (IDE)
 
 
-### QA Analitico - Verificacion y pruebas
-> Tiene como objectivo detectar defectos
+## QA Analitico - Verificacion y pruebas
 
+``` 
+Tiene como objectivo detectar defectos
+```
 **Consigna del QA analitco**
 
 * Los defectos deben ser detectados tan pronto como sea posible
@@ -119,7 +125,7 @@ La norma **ISO 2501** añade dos atributos mas:
 
 ---
 
-## Objectivos de las pruebas
+# Objectivos de las pruebas
 
 * Generar confianza con respecto a la calidad
 * Generar informacion para la toma de decisiones
@@ -128,12 +134,12 @@ La norma **ISO 2501** añade dos atributos mas:
 * Prevencion de Defectos
 
 ---
-### Criterios de salida
+### - Criterios de salida
 * No encontrar mas defectos
 * Pruebas basadas en riesgos
 * Pruebas basadas en tiempo y presupuesto
 
-### Casos de prueba
+### - Casos de prueba
 Un buen caso de prueba debe contener las siguientes secciones(**Estandar IEEE 829**)
 
 * Precondiciones
@@ -146,16 +152,17 @@ Un buen caso de prueba debe contener las siguientes secciones(**Estandar IEEE 82
 * Prioridad
 * Forma de ejecutar la prueba, pasos para ejecutarla
 
-### Base de Pruebas
+### -  Base de Pruebas
 Conjunto de documentos que definen los requisitos del objeto de prueba
 
+---
 
-## Actividades de Proceso de pruebas
+# Actividades de Proceso de pruebas
 ```
 Cada fase del proceso de pruebas es concurrente con las fases del proceso de desarrollo
 ```
 
----
+
 * Planeacion y control
 * Seleccion de condiciones de prueba
 * Diseño y ejecucion de pruebas
@@ -171,8 +178,8 @@ Cada fase del proceso de pruebas es concurrente con las fases del proceso de des
 * Actividades de cierre de pruebas
 
 ---
-### Planeacion y control
-#### Planeacion
+## - Planeacion y control
+### Planeacion
 Define los objectivos de las pruebas y la especificacion de las actividades de prueba
 
 **Objetivos**
@@ -183,7 +190,7 @@ Define los objectivos de las pruebas y la especificacion de las actividades de p
 * Implementar el metodo de prueba / Estrategia de pruebas 
 * Manejar los recursos necesarios para las pruebas. personal, entorno de prueba, presupuestos
 
-#### Control
+### Control
 Es una actividad constante que verifica el avance real con respecto a lo planeado, informa sobre desviaciones e implica la adopcion de medidas para cumplir los objetivos planeados.
 Dado al control se puede cambiar el **plan maestro de pruebas ( Master Test Plan - Test Plan)** para adecuarlo a las necesidades
 
@@ -199,7 +206,7 @@ Dado al control se puede cambiar el **plan maestro de pruebas ( Master Test Plan
 > **Criterios de salida**
 > > Conjunto de condiciones definidas que permiten establecer que una tarea en especifico esta concluida
 
-### Analisis y diseño de pruebas
+## - Analisis y diseño de pruebas
 Tiene como finalidad convertir los objectivos de las pruebas en casos de prueba
 
 **Tareas principales**
@@ -229,14 +236,17 @@ Tiene como finalidad convertir los objectivos de las pruebas en casos de prueba
 
 ---
 ## Terminos de desarrollo de software
-* Depuracion
-	* Proceso de encontrar,analizar y solucionar el defecto  
-* Requisito
-	* Condicion o capacidad necesario sistema cumpla con lo establecido
-* Revision
-	* Evaluacion de un producto o estado de un proyecto para detectar diferencias con los resultados planificados.
+> **Depuracion**:
+>>	 Proceso de encontrar,analizar y solucionar el defecto  
+>
+> **Requisito**:
+>> Condicion o capacidad necesario sistema cumpla con lo establecido
+> 
+> **Revision**:
+> > Evaluacion de un producto o estado de un proyecto para detectar diferencias con los resultados planificados.
 
-# Depuracion
+---
+### Depuracion
 La depuracion consiste en:
 
 * Encontrar la raiz del defecto
@@ -249,7 +259,7 @@ Prueba -> Depuracion[Encontrar la causa raiz - Corregir defecto] -> Re Test
 ```
 
 ---
-## Principios del proceso de prueba
+# Principios del proceso de prueba
 
 * **El proceso de pruebas demuestra la presencia de defectos**
 	*  No detecta la ausencia de los mismos
@@ -270,7 +280,34 @@ Prueba -> Depuracion[Encontrar la causa raiz - Corregir defecto] -> Re Test
 * **La falasia de aunsencia de errores**
 	* El proceso de prueba encontrara los fallos mas importantes del objeto de prueba, pero talvez no los encuentre todos	 
 
+# Psicologia del proceso de pruebas
 
+Dev es Constructivo
+QA es Destructivo
+
+```
+Las pruebas independientes se pueden realizar en cualquier 
+nivel de proceso de pruebas
+```
+
+# Niveles de prueba
+
+* Desarrollador hace sus pruebas
+* Otro miembro del equipo de desarrollo ejecuta las pruebas sobre el codigo de un compañero
+* Un equipo de QA dedicado dentro de la compañia ejecuta las pruebas
+* Un exipo de QA externo a la compañia ejecuta las prueba - El principal inconveniente de este es que como son externos no se tiene conocimiento total del sistema, por lo que se recomienda introducirlos al proyecto lo mas tempranamente posible para que adquieran el background necesario.
+
+
+# Codigo deontologico
+
+* Publico - Actuar en coherencia con el interes publico
+* Cliente y emprendedor - Actual con el mejor interes hacia su cliente y emprendedor
+* Producto - El producto en que se trabaja cuenta con los mejores estandares profesionales
+* Criterio - Mantendran la integridad e indenpencia de su criterio profesional
+* Gestion - Se debe fomentar el enfoque etico en la gestion de pruebas
+* Profesion - Se aumentara y fomentara la reputacion de la profesion 
+* Companeros - Se fomentara y apoyara la relacion con sus compañeros
+* Nivel individual - Participar en el aumento de conociemiento y fomentaran 	el enfoque etico de la profesion1
 
 
 
