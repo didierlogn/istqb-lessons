@@ -31,13 +31,18 @@ Bug  |  Defecto  |  Error  |  Fallo  |  Calidad  |  Riesgo
 
 ---
 ```
-Software: Programa de ordenador, procedimientos, documentacion y datos de un sistema basado en un ordenador. (IEEE 610)
+Software: Programa de ordenador, procedimientos, documentacion y datos 
+de un sistema basado en un ordenador. (IEEE 610)
 ```
 ```
-Calidad de software: La totalidad de la funcionalidad y prestaciones de un producto software que contribuyen con su capacidad de satiscacer necesidades explicitas o implicitas.(ISO/IEC 9126)
+Calidad de software: La totalidad de la funcionalidad y prestaciones de
+un producto software que contribuyen con su capacidad de satiscacer 
+necesidades explicitas o implicitas.(ISO/IEC 9126)
 ```
 ```
-Calidad: Grado en el cual un componente, sisetma o porceso satisface requisitos especificados o necesidades y expectativas del usuario. (IEEE Std 610)
+Calidad: Grado en el cual un componente, sisetma o porceso satisface
+requisitos especificados o necesidades y expectativas del usuario.
+(IEEE Std 610)
 ```
 
 ---
@@ -232,7 +237,59 @@ Tiene como finalidad convertir los objectivos de las pruebas en casos de prueba
 > > Fuente que permite comprarar resultados anteriores con los obtenidos durante las pruebas
 
 ---
-> # - ---------Voy por aca --------
+## Implementacion y ejecucion de las pruebas
+
+* Finalizar, implementar y priorizar casos de prueba
+	* Crear datos de prueba
+	* Preparar el harnes de prueba
+	* Crear los scripts automatizados
+	* Verificar el entorno de prueba
+* Ejecutar la prueba
+* Registar los resulados
+* Comparar resultados obtenidos vs esperados
+* Informar y analizar incidencias - defectos
+* Repeticion de pruebas - Re-test
+* Regression
+
+
+> **Juego de Pruebas - Test Suite - Secuencia de pruebas - Test Sequence**
+> > Conjunto de casos de prueba para un componente o sistema
+> 
+> **Especificacion de procedimiento de pruebas - Test Procedure specification - Escenario de pruebas - Test Scenario**
+> > Documento que especifica la secuencia de accion para la ejecucion de una prueba - Script de prueba (IEEE 829)
+> 
+> **Ejecucion de prueba - Test execution** 
+> > Proceso de ejecutar una prueba especifica
+> 
+> 
+> **Registro de Prueba - Informe de pruebas - protocolo de pruebas**
+> > Registro cronologico de las ejecuciones de prueba. 
+> 
+> **Pruebas de regression**
+> > Pruebas de un programa previamente probado luego de que este ha sufrido modificaciones
+> 
+> **Repeticion de prueba**
+> > Repetecion de una prueba luego de una correcion de un defecto detectado
+ 
+---
+## Evalucaion de criterios de salida
+
+* Evaluar la ejecucion de las pruebas contra los objetivos definidos
+* Evaluar los registros de prueba
+* Proporcionar informacion para tomar la decision de realizar pruebas adicionales
+
+
+---
+## Actividades de cierre
+
+* Recopilar datos de las actividades del proceso de prueba
+* Cerrar informes de incidencia
+* Comprobar los entregables planificados han sido entregados y probados
+* Documentar la aceptacion de pruebas
+* Finalizar y archivar  productos de soporte de pruebas
+* Analizar las lecciones aprendidas
+* Mejorar la madurez del proceso de prueba
+
 
 ---
 ## Terminos de desarrollo de software
@@ -285,10 +342,23 @@ Prueba -> Depuracion[Encontrar la causa raiz - Corregir defecto] -> Re Test
 Dev es Constructivo
 QA es Destructivo
 
+
+>Las pruebas tambien son una actividad constructiva dado que permite eliminar los defectos en un prodocto
+___
+
 ```
 Las pruebas independientes se pueden realizar en cualquier 
 nivel de proceso de pruebas
 ```
+
+Caracteristicas de un buen probador:
+
+* Curioso
+* Perceptivo
+* Atento a detalles
+* Esceptico y con actitud critica
+* Buena comunicacion
+* Experiencia 
 
 # Niveles de prueba
 
@@ -303,7 +373,7 @@ nivel de proceso de pruebas
 * Publico - Actuar en coherencia con el interes publico
 * Cliente y emprendedor - Actual con el mejor interes hacia su cliente y emprendedor
 * Producto - El producto en que se trabaja cuenta con los mejores estandares profesionales
-* Criterio - Mantendran la integridad e indenpencia de su criterio profesional
+* Criterio/Juicio  - Mantendran la integridad e indenpencia de su criterio profesional
 * Gestion - Se debe fomentar el enfoque etico en la gestion de pruebas
 * Profesion - Se aumentara y fomentara la reputacion de la profesion 
 * Companeros - Se fomentara y apoyara la relacion con sus compañeros

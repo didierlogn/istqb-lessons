@@ -22,6 +22,7 @@
     <section class="main-content">
  <!-- Start Markdown Code  -->
 
+
 <h1 id="toc_0">Capitulo 1</h1>
 
 <h3 id="toc_1">Terminos</h3>
@@ -84,11 +85,16 @@
 
 <hr>
 
-<div><pre><code class="language-none">Software: Programa de ordenador, procedimientos, documentacion y datos de un sistema basado en un ordenador. (IEEE 610)</code></pre></div>
+<div><pre><code class="language-none">Software: Programa de ordenador, procedimientos, documentacion y datos 
+de un sistema basado en un ordenador. (IEEE 610)</code></pre></div>
 
-<div><pre><code class="language-none">Calidad de software: La totalidad de la funcionalidad y prestaciones de un producto software que contribuyen con su capacidad de satiscacer necesidades explicitas o implicitas.(ISO/IEC 9126)</code></pre></div>
+<div><pre><code class="language-none">Calidad de software: La totalidad de la funcionalidad y prestaciones de
+un producto software que contribuyen con su capacidad de satiscacer 
+necesidades explicitas o implicitas.(ISO/IEC 9126)</code></pre></div>
 
-<div><pre><code class="language-none">Calidad: Grado en el cual un componente, sisetma o porceso satisface requisitos especificados o necesidades y expectativas del usuario. (IEEE Std 610)</code></pre></div>
+<div><pre><code class="language-none">Calidad: Grado en el cual un componente, sisetma o porceso satisface
+requisitos especificados o necesidades y expectativas del usuario.
+(IEEE Std 610)</code></pre></div>
 
 <hr>
 
@@ -367,9 +373,90 @@ Dado al control se puede cambiar el <strong>plan maestro de pruebas ( Master Tes
 
 <hr>
 
+<h2 id="toc_18">Implementacion y ejecucion de las pruebas</h2>
+
+<ul>
+<li>Finalizar, implementar y priorizar casos de prueba
+
+<ul>
+<li>Crear datos de prueba</li>
+<li>Preparar el harnes de prueba</li>
+<li>Crear los scripts automatizados</li>
+<li>Verificar el entorno de prueba</li>
+</ul></li>
+<li>Ejecutar la prueba</li>
+<li>Registar los resulados</li>
+<li>Comparar resultados obtenidos vs esperados</li>
+<li>Informar y analizar incidencias - defectos</li>
+<li>Repeticion de pruebas - Re-test</li>
+<li>Regression</li>
+</ul>
+
+<blockquote>
+<p><strong>Juego de Pruebas - Test Suite - Secuencia de pruebas - Test Sequence</strong></p>
+
+<blockquote>
+<p>Conjunto de casos de prueba para un componente o sistema</p>
+</blockquote>
+
+<p><strong>Especificacion de procedimiento de pruebas - Test Procedure specification - Escenario de pruebas - Test Scenario</strong></p>
+
+<blockquote>
+<p>Documento que especifica la secuencia de accion para la ejecucion de una prueba - Script de prueba (IEEE 829)</p>
+</blockquote>
+
+<p><strong>Ejecucion de prueba - Test execution</strong> </p>
+
+<blockquote>
+<p>Proceso de ejecutar una prueba especifica</p>
+</blockquote>
+
+<p><strong>Registro de Prueba - Informe de pruebas - protocolo de pruebas</strong></p>
+
+<blockquote>
+<p>Registro cronologico de las ejecuciones de prueba. </p>
+</blockquote>
+
+<p><strong>Pruebas de regression</strong></p>
+
+<blockquote>
+<p>Pruebas de un programa previamente probado luego de que este ha sufrido modificaciones</p>
+</blockquote>
+
+<p><strong>Repeticion de prueba</strong></p>
+
+<blockquote>
+<p>Repetecion de una prueba luego de una correcion de un defecto detectado</p>
+</blockquote>
+</blockquote>
+
 <hr>
 
-<h2 id="toc_18">Terminos de desarrollo de software</h2>
+<h2 id="toc_19">Evalucaion de criterios de salida</h2>
+
+<ul>
+<li>Evaluar la ejecucion de las pruebas contra los objetivos definidos</li>
+<li>Evaluar los registros de prueba</li>
+<li>Proporcionar informacion para tomar la decision de realizar pruebas adicionales</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_20">Actividades de cierre</h2>
+
+<ul>
+<li>Recopilar datos de las actividades del proceso de prueba</li>
+<li>Cerrar informes de incidencia</li>
+<li>Comprobar los entregables planificados han sido entregados y probados</li>
+<li>Documentar la aceptacion de pruebas</li>
+<li>Finalizar y archivar  productos de soporte de pruebas</li>
+<li>Analizar las lecciones aprendidas</li>
+<li>Mejorar la madurez del proceso de prueba</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_21">Terminos de desarrollo de software</h2>
 
 <blockquote>
 <p><strong>Depuracion</strong>:</p>
@@ -393,7 +480,7 @@ Dado al control se puede cambiar el <strong>plan maestro de pruebas ( Master Tes
 
 <hr>
 
-<h3 id="toc_19">Depuracion</h3>
+<h3 id="toc_22">Depuracion</h3>
 
 <p>La depuracion consiste en:</p>
 
@@ -408,7 +495,7 @@ Dado al control se puede cambiar el <strong>plan maestro de pruebas ( Master Tes
 
 <hr>
 
-<h1 id="toc_20">Principios del proceso de prueba</h1>
+<h1 id="toc_23">Principios del proceso de prueba</h1>
 
 <ul>
 <li><strong>El proceso de pruebas demuestra la presencia de defectos</strong>
@@ -452,15 +539,32 @@ Dado al control se puede cambiar el <strong>plan maestro de pruebas ( Master Tes
 </ul></li>
 </ul>
 
-<h1 id="toc_21">Psicologia del proceso de pruebas</h1>
+<h1 id="toc_24">Psicologia del proceso de pruebas</h1>
 
 <p>Dev es Constructivo
 QA es Destructivo</p>
 
+<blockquote>
+<p>Las pruebas tambien son una actividad constructiva dado que permite eliminar los defectos en un prodocto</p>
+
+<hr>
+</blockquote>
+
 <div><pre><code class="language-none">Las pruebas independientes se pueden realizar en cualquier 
 nivel de proceso de pruebas</code></pre></div>
 
-<h1 id="toc_22">Niveles de prueba</h1>
+<p>Caracteristicas de un buen probador:</p>
+
+<ul>
+<li>Curioso</li>
+<li>Perceptivo</li>
+<li>Atento a detalles</li>
+<li>Esceptico y con actitud critica</li>
+<li>Buena comunicacion</li>
+<li>Experiencia </li>
+</ul>
+
+<h1 id="toc_25">Niveles de prueba</h1>
 
 <ul>
 <li>Desarrollador hace sus pruebas</li>
@@ -469,18 +573,19 @@ nivel de proceso de pruebas</code></pre></div>
 <li>Un exipo de QA externo a la compañia ejecuta las prueba - El principal inconveniente de este es que como son externos no se tiene conocimiento total del sistema, por lo que se recomienda introducirlos al proyecto lo mas tempranamente posible para que adquieran el background necesario.</li>
 </ul>
 
-<h1 id="toc_23">Codigo deontologico</h1>
+<h1 id="toc_26">Codigo deontologico</h1>
 
 <ul>
 <li>Publico - Actuar en coherencia con el interes publico</li>
 <li>Cliente y emprendedor - Actual con el mejor interes hacia su cliente y emprendedor</li>
 <li>Producto - El producto en que se trabaja cuenta con los mejores estandares profesionales</li>
-<li>Criterio - Mantendran la integridad e indenpencia de su criterio profesional</li>
+<li>Criterio/Juicio  - Mantendran la integridad e indenpencia de su criterio profesional</li>
 <li>Gestion - Se debe fomentar el enfoque etico en la gestion de pruebas</li>
 <li>Profesion - Se aumentara y fomentara la reputacion de la profesion </li>
 <li>Companeros - Se fomentara y apoyara la relacion con sus compañeros</li>
 <li>Nivel individual - Participar en el aumento de conociemiento y fomentaran     el enfoque etico de la profesion1</li>
 </ul>
+
 
 
 <!-- End Markdown Code  -->
