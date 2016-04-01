@@ -17,12 +17,96 @@
       <a href="chapter2.html" class="btn">Capitulo 2</a>
       <a href="chapter3.html" class="btn">Capitulo 3</a>
       <a href="chapter4.html" class="btn">Capitulo 4</a>
+      <a href="chapter5.html" class="btn">Capitulo 5</a>
+      <a href="chapter6.html" class="btn">Capitulo 6</a>
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="welcome-to-isqtb-lessons" class="anchor" href="#welcome-to-isqtb-lessons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to ISQTB Lessons.</h3>
 
+
+<!-- Markdown code -->
+<h1 id="toc_0">Capitulo 3</h1>
+
+<h2 id="toc_1">Tecnicas estaticas y procesos de prueba</h2>
+
+<h2 id="toc_2">Proceso de revisiones</h2>
+
+<h2 id="toc_3">Analisis estatico con herramientas</h2>
+
+<blockquote>
+<h2 id="toc_4"><strong>Analisis Estatico</strong></h2>
+
+<blockquote>
+<h2 id="toc_5">Consiste en analizar un objeto de prueba (codigo fuente, script, requerimiento) sin ejecutar el sistema.</h2>
+</blockquote>
+</blockquote>
+
+<p>Durante el analisis estatico se comprueban los siguientes aspectos</p>
+
+<ul>
+<li>Reglas y estandares de programacion</li>
+<li>Diseño de programa - Analisis del flujo de control</li>
+<li>Uso de datos - Analisis del flujo de datos</li>
+<li>Complejidad de la estructura del programa</li>
+</ul>
+
+<p>El analisis estatico usando herramientas se realiza con un menor esfuerzo que con las revisiones, lo que permite detectar logica ausente o erronea, construcciones muy complicadas, vulnerables a fallos de seguridad, por lo que se ejecuta de antes que las inspecciones.
+Ademas permite comprobar la mantenibilidad del codigo o diseño o inclusive diferencias con el diseño</p>
+
+<h3 id="toc_6">Herramientas</h3>
+
+<h4 id="toc_7">Compilador</h4>
+
+<ul>
+<li>Dectecta errores de sintaxis en el codigo</li>
+<li>Comprueba consistencia entre los tipo de datos de las variables</li>
+<li>Detecta variables no declaradas o codigo inaccesible</li>
+</ul>
+
+<h4 id="toc_8">Analizador</h4>
+
+<ul>
+<li>Convenciones y Estandares</li>
+<li>Metricas de complejidad</li>
+<li>Acoplamiento de objectos</li>
+</ul>
+
+<h3 id="toc_9">Analisis de flujo de control</h3>
+
+<p>Permite detectar cdefectos causados por un desarrollo incorrecto(ramas muertas o codigo muerto)
+Se utiliza un grafo dirigido donde</p>
+
+<ul>
+<li>Los nodos representan sentencias o grupos de sentencias</li>
+<li>Las aristas representan condicionales o blucles</li>
+</ul>
+
+<p>Esto permite tener una visualizacion mas clara de como esta la estructura del programa.</p>
+
+<h4 id="toc_10">Como hacer el grafico de control flujo a partir del codigo</h4>
+
+<p>Este es un ejemplo de como realizar el grafico de control de flujo a partir del codigo. <a target="_blank" href="https://drive.google.com/file/d/0B0r0vOZR85sfemxUTmxUZUExQkE/view?usp=sharing">Link</a>.</p>
+
+<p><strong>Codigo</strong></p>
+
+<p><img src="https://cldup.com/TuSxSK7hRi.thumb.png" alt="Codigo"></p>
+
+<p><strong>Identificar sentencias y condicionales</strong></p>
+
+<p><img src="https://cldup.com/WWuQISUbUZ.thumb.png" alt="Sentencias y condicionales "></p>
+
+<p><strong>Diagrama de flujo</strong></p>
+
+<p><img src="https://cldup.com/CtjOveo2u--3000x3000.png" alt="Diagrama de flujo"></p>
+
+<p><strong>Diagrama de control de flujo</strong></p>
+
+<p><img src="https://cldup.com/0m96b-szyU-2000x2000.png" alt="Diagrama de control de flujo"></p>
+
+<p>Tomado de <a target="_blank" href="http://cursos.tecmilenio.edu.mx/cursos/at8q3ozr5p/prof/sa/sa09002/anexos/grafo_java">http://cursos.tecmilenio.edu.mx/cursos/at8q3ozr5p/prof/sa/sa09002/anexos/grafo_java</a></p>
+
+
+<!-- End Markdown code -->
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/didiercolo/istqb-lessons">Istqb-lessons</a> is maintained by <a href="https://github.com/didiercolo">didiercolo</a>.</span>
 
