@@ -161,14 +161,197 @@
 
 <h2 id="toc_8">Niveles de prueba</h2>
 
-<h2 id="toc_9">Tipos de prueba</h2>
+<h3 id="toc_9">Pruebas de componentes</h3>
 
-<h2 id="toc_10">Pruebas de mantenimiento</h2>
+<p>Se pueba cada componente individualmente, los casos de prueba se obtienen de las especificaciones de componente, diseño de software y modelo de datos</p>
 
+<p>Base de pruebas: Requisitos de componente, Diseño detallado, codigo
+Objetos de prueba: Componentes, clases modulos, programas, conversion de datos, modulos de bases de datos</p>
 
+<table>
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Lenguaje</th>
+</tr>
+</thead>
 
+<tbody>
+<tr>
+<td>Prueba de clase</td>
+<td>Java C++</td>
+</tr>
+<tr>
+<td>Prueba de modulo</td>
+<td>C</td>
+</tr>
+<tr>
+<td>Prueba de unidad</td>
+<td>Pascal</td>
+</tr>
+</tbody>
+</table>
 
+<p>Las pruebas de componente podran comprobar caracteristicas funcionales y no funcionales de un sistema</p>
 
+<p><strong>Arnes de prueba</strong>
+Se requiere para la prueba de componente e integracion </p>
+
+<ul>
+<li>Controlador - Driver: Simulan datos de entrada, registran datos de salida, se utilizan herramientas de programacion.</li>
+<li>Stub: Reemplaza o simula un componente que aun no se encuentra disponible o no es parte del objecto de prueba</li>
+</ul>
+
+<h3 id="toc_10">Pruebas de integracion - pruebas de interfaz</h3>
+
+<p>Comprueban las funciones externas tras las pruebas de componente y la interaccion entre componentes o subsistemas</p>
+
+<ul>
+<li>Base de pruebas: Diseño de software y sistema, Arquitectura, flujos de trabajo(workflow), casos de uso</li>
+<li>Objectos de pruebas: Implementacion de subsistema de BD, interfaces, infraestructura, configuracion de datos</li>
+</ul>
+
+<h4 id="toc_11">Estrategias de pruebas de integracion</h4>
+
+<ul>
+<li>Big Bang</li>
+<li>Ascendente (bottom-up)</li>
+<li>Descendiente (top-down)</li>
+<li>Ad Hoc</li>
+</ul>
+
+<h3 id="toc_12">Pruebas de Sistema</h3>
+
+<p>Las pruebas de sistema comprueban el comportamiento del sistema completo.
+El alcance esta definido por el plan maestro de pruebas  o plan del nivel de prueba
+La calidad del software es obsevada desde el punto de vista del usuario</p>
+
+<p>No son necesarios los drivers o stubs, dado que se prueba la totalidad del sistema</p>
+
+<ul>
+<li>Bases de prueba: Casos de uso, especificaciones de requisitos de software y sistema, especificacion funcional, manueales de sistema, informes de analisis de riesgos, configuracion del sistema</li>
+<li>Datos de configuracion </li>
+</ul>
+
+<h3 id="toc_13">Pruebas de aceptacion</h3>
+
+<ul>
+<li><strong>Pruebas de acceptacion contractual y aceptacion de regulacion</strong>: Se cumplen todos los hitos legales? esta todo de acuerdo con el contrato, las pruebas de aceptacion toman en cuenta normas y reglamentos gubernamentales, industriales</li>
+<li><strong>Pruebas de aceptacion de usuario:</strong>: Son llevadas acabo por los usuarios del sistema, en el entorno del cliente</li>
+<li><p><strong>Pruebas de aceptacion operativa:</strong> Son las pruebas llevadas a cabo por los administradores del sistemas del cliente que verifican que el sistema cumple con los requisitos tecnicos correctos</p></li>
+<li><p><strong>Pruebas aceptacion alpha</strong>: Son llevadas a cabo en el entorno del desarrollador</p></li>
+<li><p><strong>Pruebas de aceptacion beta:</strong> Son llevadas a cabo en el entorno propio del cliente</p></li>
+</ul>
+
+<blockquote>
+<p><strong>Ventajas de pruebas alpha y beta</strong></p>
+
+<blockquote>
+<p>Reduce el costo de las pruebas de aceptacion
+Se utilizan distintos entornos de prueba
+Involucran a un alto numero de usuarios</p>
+</blockquote>
+</blockquote>
+
+<ul>
+<li>Bases de prueba: requisitos de usuario, de sistema, casos de uso, procesos de negocios informes analisis de riesgos</li>
+<li>Objectos de prueba: Procesos de negocios, procedimientos de negocio, procedimientos de usuario</li>
+</ul>
+
+<h2 id="toc_14">Tipos de prueba</h2>
+
+<ul>
+<li><strong>Pruebas funcionales</strong>:  objetivo probar la funcionalidad
+Se utilizan los metodos de caja negra.
+Estas pruebas se pueden llevar a cabo en todos los niveles de prueba</li>
+</ul>
+
+<blockquote>
+<p>Pruebas de seguridad</p>
+
+<blockquote>
+<p>Tipo de prueba funcional q abora amenazas externas
+Ataques maliciosos podrian dañar programas o datos</p>
+</blockquote>
+</blockquote>
+
+<ul>
+<li><strong>Pruebas no funcionales:</strong> Objetivo probar las caracteristicas del producto(Fiabilidad, usabilidad, eficiencia, mantenibilidad y portabilidad)</li>
+</ul>
+
+<p>Pruebas de carga: Sistema expuesto a una carga de usuarios 
+Pruebas de rendimiento: Rapidez con que el sistema ejecuta una funcion
+Pruebas de volumen: Tiempo de procesamiento de grandes cantidades de datos/ficheros
+Pruebas de estres: Sobrecarga/recuperacion al entorno a una carga normal</p>
+
+<ul>
+<li><p><strong>Pruebas Estructurales:</strong> Objectivo probar la estructura/arquitectura del sistema
+Son las pruebas que se utilizan metodos de caja blanca para su ejecucion.
+Tiene como objetivo saber cuanto % de la estructura del objeto de prueba (codigo del sistema) ha sido cubierto por los test cases.</p></li>
+<li><p><strong>Pruebas asociadas al cambio:</strong> Objetivo probar despues de un cambio, dado que luego q el objeto de pruebas a sido modificado es necesario repetir las pruebas con el fin de validar que los requerimientos han sido correctamente cumplidos.
+Estas se ejecutan luego de una Extencion funcional del sistema o luego de la correccion de errores.
+Se pueden llevar a cabo en cualquier nivel de prueba</p></li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Razon del cambio</th>
+<th>Tipo de pruebas</th>
+<th></th>
+<th>Final</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Correccion de errores</td>
+<td>Pruebas de confirmacion</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Pruebas de Regression</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>Release</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Pruebas de Regression</td>
+<td></td>
+</tr>
+<tr>
+<td>Extension funcional</td>
+<td>Nuevos casos de prueba</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Criterios  para la seleccion de casos de prueba de regresion</p>
+
+<ul>
+<li>Casos con mas alta prioridad</li>
+<li>Funcionalidad estandar, no casos especiales o variaciones</li>
+<li>Probar la configuracion utilizada con mayor frecuencia</li>
+<li>Probar solamente sistemas/zonas seleccionadas para ser tomadas en las pruebas</li>
+</ul>
+
+<h2 id="toc_15">Pruebas de mantenimiento</h2>
+
+<p>Son las pruebas q se ejecutan luego de que el sistema a sido puesto en producion
+Se realizan cuando hay una extension funcional, cuando hay hotfixes o cuando el sistema se va a sacar de produccion.
+Es necesario la ejeccion de pruebas de regression por lo que el analisis de impacto ayudara a juzgar los cambios asociacidos con el riesgo y asi establecer el set de pruebas necesarios.
+Las pruebas de migracion de datos son importantes </p>
 
 
 
