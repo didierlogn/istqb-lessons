@@ -25,19 +25,281 @@
 
 
 <!-- Markdown code -->
+
 <h1 id="toc_0">Capitulo 3</h1>
 
 <h2 id="toc_1">Tecnicas estaticas y procesos de prueba</h2>
 
-<h2 id="toc_2">Proceso de revisiones</h2>
+<p>Estas comprenden tecnicas en las cuales no se ejecuta el objeto de prueba
+Las pruebas estaticas son:</p>
 
-<h2 id="toc_3">Analisis estatico con herramientas</h2>
+<ul>
+<li><strong>Revisiones</strong></li>
+<li><strong>Analisis Estatico</strong></li>
+</ul>
+
+<p>Estan detectan la causa de los fallos -&gt; <strong>Defectos</strong>, Ademas pueden encontrar defectos que las pruebas dinamicas no podrian, los documentos de calidad producen productos de calidad.</p>
+
+<h3 id="toc_2">Objetivos de la revision</h3>
+
+<ul>
+<li>Se utilizan para corroborar la correcta transicion entre las distintas fases del modelo V.</li>
+<li>Detectan errores de forma temprana</li>
+<li>Ejemplo de defectos
+
+<ul>
+<li>  Defectos en las especificaciones</li>
+<li> Defectos en el diseño o arquitectura</li>
+<li> Defecto en la especificaciones de interfaces</li>
+<li> Mala Mantenibilidad del codigo</li>
+<li> Desviaciones con respecto a los estandares</li>
+</ul></li>
+</ul>
+
+<p><strong>Ventajas</strong></p>
+
+<ul>
+<li>Permite tener costos mas bajos dado que encuentran errores en etapas tempranas</li>
+<li>Los documentos de calidad mejoran el desarrollo</li>
+<li>Mejoran la comunicacion y el intercambio de conocimiento del sistema entre los miembros del sistema</li>
+</ul>
+
+<p><strong>Desventajas</strong>
+* Se pueden dar enfrentamientos con el autor
+* Los expertos necesitan adquirir el conocimiento requerido para participar en la revision
+* Es necesario impertir tiempo y por ende dinero 
+* El Moderador y los participantes influyen en la calidad de la revision</p>
+
+<h2 id="toc_3">Proceso de revisiones</h2>
+
+<h3 id="toc_4">Actividades de una revision formal</h3>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left">Actividad</th>
+<th>Tareas</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: left"><strong>Planificar</strong></td>
+<td>Definir los criterios de revision</td>
+</tr>
+<tr>
+<td style="text-align: left"></td>
+<td>Selecionar el personal</td>
+</tr>
+<tr>
+<td style="text-align: left"></td>
+<td>Asignar funciones y tareas</td>
+</tr>
+<tr>
+<td style="text-align: left"></td>
+<td>Definir el calendario</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>Definicion de criterios de entrada y salida</strong></td>
+<td>Seleccionar que partes seran revisadas (dependiendo de la importancia y complejidad)</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>Inicio/Lansamiento/Kickoff</strong></td>
+<td>Se reparten los documentos</td>
+</tr>
+<tr>
+<td style="text-align: left"></td>
+<td>Se explican los objetivos de la revision</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>Comprobacion de criterios de entrada</strong></td>
+<td>(Esto para revisiones formales)</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>Preparacion individual</strong></td>
+<td>Se revisan los documentos por parte de cada miembro del equipo revisor</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>Identificar posibles defectos, preguntas, comentarios</strong></td>
+<td>Los revisores detectan los defectos</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>Reunion de revision</strong></td>
+<td>Los revisores prsentan sus resultados</td>
+</tr>
+<tr>
+<td style="text-align: left"></td>
+<td>Debatir, registrar los resultados</td>
+</tr>
+<tr>
+<td style="text-align: left"></td>
+<td>Identificar defectos  y presentar recomendaciones</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>Examen/Evaluacion/Registro</strong></td>
+<td>Reuniones o comunicaciones electronicas del grupo</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>Recontruccion / Adaptacion</strong></td>
+<td>El autor corrige los errores detectados y mantiene actualizados el estado del defecto</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>Seguimiento</strong></td>
+<td>Comprobacion de que los defectos han sido tratados</td>
+</tr>
+<tr>
+<td style="text-align: left"></td>
+<td>Se recopilan metricas</td>
+</tr>
+<tr>
+<td style="text-align: left"></td>
+<td>Se decide realizar otra revision si fuera necesario</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Comprobacion de criterios de salida</strong></p>
+
+<h3 id="toc_5">Roles y responsabilidades</h3>
+
+<ul>
+<li><strong>Jefe</strong><br>
+
+<ul>
+<li>Incia la revision</li>
+<li>Determina si los objetivos se han cumplido</li>
+<li>Asigna el tiempo en el calendario del proyecto<br></li>
+</ul></li>
+<li><p><strong>Moderador</strong>              </p>
+
+<ul>
+<li>  Dirige la reunion</li>
+<li>Es el mediador </li>
+<li>Concluye resultados</li>
+<li>Planifica la revision, su ejecucion y el seguimiento</li>
+</ul></li>
+<li><p><strong>Autor</strong>              </p>
+
+<ul>
+<li>Redactor del objecto de revision</li>
+<li>Expone su trabajo en la revision</li>
+</ul></li>
+<li><p><strong>Revisor</strong>               </p>
+
+<ul>
+<li>Detectan  defectos, desviaciones  o problemas</li>
+<li>Presentan consejos</li>
+<li>Representan los distintos perspectivas y roles de la revision</li>
+<li>Tienen el conocimiento tecnico o del negocio para participar<br></li>
+</ul></li>
+<li><p><strong>Escriba</strong>              </p>
+
+<ul>
+<li>Documenta todos los puntos durante la revision</li>
+</ul></li>
+</ul>
+
+<h4 id="toc_6">Tipos de Revisiones</h4>
+
+<table>
+<thead>
+<tr>
+<th>Inspeccion</th>
+<th>Revision Guiada</th>
+<th>Revision Tecnica</th>
+<th>Informal</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Se realiza con listas de comprobacion y metricas</td>
+<td>Revision guidados de documentos, diseño de interfaz o modelos de bases de datos</td>
+<td>Uso  listas de comprobacion</td>
+<td>Es la revision mas simple</td>
+</tr>
+<tr>
+<td>Se necesita un moderador</td>
+<td>La reunion es dirigida por el autor, no es necesario el moderador</td>
+<td>Se necesita un moderador entrenado</td>
+<td></td>
+</tr>
+<tr>
+<td>Es necesario criterios de entrada espeficados previamente</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Es un proceso formal</td>
+<td>Son secciones abiertas</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Preparacion previa a la reunion</td>
+<td>No necesita preparacion previa</td>
+<td>Preparacion previa a la reunion</td>
+<td>Iniciada por un compañero de trabajo</td>
+</tr>
+<tr>
+<td>Se tiene una lista de hayazgos</td>
+<td></td>
+<td>Se tiene una lista de hayazgos</td>
+<td>Listas de accion</td>
+</tr>
+<tr>
+<td>Se necesitan roles definidos</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Actividades intencivas de preparacion y seguimiento</td>
+<td>Son secciones con notificaciones con poco antelacion</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Es un metodo estructurado</td>
+<td></td>
+<td></td>
+<td>No requiere protocolo, facil de ejecutar y rentable</td>
+</tr>
+<tr>
+<td>Se realiza como un examen entre pares</td>
+<td>Participacion grupal de parees, son escenarios, ejecucion simulada</td>
+<td>Se realiza como un examen entre pares</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Objetivo principal:</strong> Identificar defectos</td>
+<td><strong>Objetivo principal:</strong> Identificar defectos, aprender y entender el objeto de pruebas</td>
+<td><strong>Objetivo principal:</strong> Toma de decision, evaluar alternativas, detectar defectos, resolver problemas tecnicos, comprobar estandares</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="toc_7">Factores de exito de revisiones</h4>
+
+<ul>
+<li>Hay un enfasis de aprendizaje y mejoras de proceso</li>
+<li>Debe haber un ambiente de confianza</li>
+<li>Deben ser enfocadas al logro de objetivos</li>
+<li>El autor debe sr motivado de forma positiva, nunca con el motivo de criticar su trabajo</li>
+<li>Uso de herramientas y plantillas</li>
+<li>Uso de listas de comprobacion (checklist)</li>
+<li>Presupuesto correcto</li>
+</ul>
+
+<h2 id="toc_8">Analisis estatico con herramientas</h2>
 
 <blockquote>
-<h2 id="toc_4"><strong>Analisis Estatico</strong></h2>
+<h2 id="toc_9"><strong>Analisis Estatico</strong></h2>
 
 <blockquote>
-<h2 id="toc_5">Consiste en analizar un objeto de prueba (codigo fuente, script, requerimiento) sin ejecutar el sistema.</h2>
+<h2 id="toc_10">Consiste en analizar un objeto de prueba (codigo fuente, script, requerimiento) sin ejecutar el sistema.</h2>
 </blockquote>
 </blockquote>
 
@@ -53,9 +315,9 @@
 <p>El analisis estatico usando herramientas se realiza con un menor esfuerzo que con las revisiones, lo que permite detectar logica ausente o erronea, construcciones muy complicadas, vulnerables a fallos de seguridad, por lo que se ejecuta de antes que las inspecciones.
 Ademas permite comprobar la mantenibilidad del codigo o diseño o inclusive diferencias con el diseño</p>
 
-<h3 id="toc_6">Herramientas</h3>
+<h3 id="toc_11">Herramientas</h3>
 
-<h4 id="toc_7">Compilador</h4>
+<h4 id="toc_12">Compilador</h4>
 
 <ul>
 <li>Dectecta errores de sintaxis en el codigo</li>
@@ -63,7 +325,7 @@ Ademas permite comprobar la mantenibilidad del codigo o diseño o inclusive dife
 <li>Detecta variables no declaradas o codigo inaccesible</li>
 </ul>
 
-<h4 id="toc_8">Analizador</h4>
+<h4 id="toc_13">Analizador</h4>
 
 <ul>
 <li>Convenciones y Estandares</li>
@@ -71,7 +333,7 @@ Ademas permite comprobar la mantenibilidad del codigo o diseño o inclusive dife
 <li>Acoplamiento de objectos</li>
 </ul>
 
-<h3 id="toc_9">Analisis de flujo de control</h3>
+<h3 id="toc_14">Analisis de flujo de control</h3>
 
 <p>Permite detectar cdefectos causados por un desarrollo incorrecto(ramas muertas o codigo muerto)
 Se utiliza un grafo dirigido donde</p>
@@ -83,9 +345,9 @@ Se utiliza un grafo dirigido donde</p>
 
 <p>Esto permite tener una visualizacion mas clara de como esta la estructura del programa.</p>
 
-<h4 id="toc_10">Como hacer el grafico de control flujo a partir del codigo</h4>
+<h4 id="toc_15">Como hacer el grafico de control flujo a partir del codigo</h4>
 
-<p>Este es un ejemplo de como realizar el grafico de control de flujo a partir del codigo. <a target="_blank" href="https://drive.google.com/file/d/0B0r0vOZR85sfemxUTmxUZUExQkE/view?usp=sharing">Link</a>.</p>
+<p>Este es un ejemplo de como realizar el grafico de control de flujo a partir del codigo. <a href="https://drive.google.com/file/d/0B0r0vOZR85sfemxUTmxUZUExQkE/view?usp=sharing">Link</a>.</p>
 
 <p><strong>Codigo</strong></p>
 
@@ -103,7 +365,21 @@ Se utiliza un grafo dirigido donde</p>
 
 <p><img src="https://cldup.com/0m96b-szyU-2000x2000.png" alt="Diagrama de control de flujo"></p>
 
-<p>Tomado de <a target="_blank" href="http://cursos.tecmilenio.edu.mx/cursos/at8q3ozr5p/prof/sa/sa09002/anexos/grafo_java">http://cursos.tecmilenio.edu.mx/cursos/at8q3ozr5p/prof/sa/sa09002/anexos/grafo_java</a></p>
+<p>Tomado de <a href="http://cursos.tecmilenio.edu.mx/cursos/at8q3ozr5p/prof/sa/sa09002/anexos/grafo_java">http://cursos.tecmilenio.edu.mx/cursos/at8q3ozr5p/prof/sa/sa09002/anexos/grafo_java</a></p>
+
+<h3 id="toc_16">Analisis de flujo de datos</h3>
+
+<p>Este permite detectar errores en el flujo de datos, es decir valida los datos q puede tener una variable durante todo el ciclo del programa con el fin de encontrar algun error durante el proceso</p>
+
+<h3 id="toc_17">Metricas</h3>
+
+<p>Tratan distintos aspectos del programa: Tamaño de programa (Total de lineas de codigo), Estructuras de control (numero cliclomatico), Estructuras de control de datos(metrca de Halstead)</p>
+
+<p><strong>Numero ciclomatico</strong> mide la complejidad estatica de un programa utilizando el grafo de control de flujo.</p>
+
+<blockquote>
+<h2 id="toc_18">v(G) = e - n +2p</h2>
+</blockquote>
 
 
 <!-- End Markdown code -->
