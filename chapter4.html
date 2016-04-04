@@ -22,56 +22,153 @@
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="welcome-to-isqtb-lessons" class="anchor" href="#welcome-to-isqtb-lessons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Capitulo 4.</h3>
 
-
-
-
+    <!-- <!-- Markdown code -->
 <h1 id="toc_0">Capitulo 4</h1>
 
-<h2 id="toc_1">Tecnicas de Caja Negra</h2>
+<h2 id="toc_1">Proceso de desarrollo de pruebas</h2>
+
+<p>Los casos de prueba deben ser tomados de los requerimientos </p>
+
+<blockquote>
+<p><strong>Trazabilidad</strong></p>
+
+<blockquote>
+<p>Las pruebas deben ser trazables -&gt; Que requisitos han sido cubiertos por cuales casos de prueba?
+Permite definir la cobertura de requisitos
+Si hay un cambio se puede determinar cuales casos de prueba son afectados </p>
+</blockquote>
+
+<p><strong>Objeto de pruebas</strong></p>
+
+<blockquote>
+<p>Elemento a ser revisado (Documento, codigo , programa)</p>
+</blockquote>
+
+<p><strong>Condicion de pruebas</strong></p>
+
+<blockquote>
+<p>Elemento o evento de un componente o sistema que deveria ser verificado or uno o mas casos de prueba</p>
+</blockquote>
+
+<p><strong>Criterios de prueba</strong></p>
+
+<blockquote>
+<p>El objeto de pruebas debe cumplir los criterios de prueba con el objeto de superar la preuba</p>
+</blockquote>
+
+<p><strong>Calendario de ejecucion de pruebas</strong></p>
+
+<blockquote>
+<p>Esquema de ejecucion de las pruebas</p>
+</blockquote>
+
+<p><strong>Especificacion de diseño de pruebas</strong></p>
+
+<blockquote>
+<p>Documento que especifica las condiciones de prueba, el enfoque de preuba de forma detallada e identifica los casos de prueba a alto nivel</p>
+</blockquote>
+
+<p><strong>Especificacion de casos de prueba</strong></p>
+
+<blockquote>
+<p>Documentacion que especifica un conjunto de casos de prueba para un elemento </p>
+</blockquote>
+</blockquote>
+
+<h4 id="toc_2"><strong>Caso de prueba</strong></h4>
+
+<ul>
+<li><strong>Precondiciones</strong></li>
+<li><strong>Valores de entrada</strong></li>
+<li><strong>Resultados esperados</strong></li>
+<li><strong>Postcondiciones</strong></li>
+<li> <strong>Dependencias</strong></li>
+<li> <strong>Identificador</strong></li>
+<li><strong>Requisitos</strong></li>
+</ul>
+
+<hr>
+
+<p>Los casos de prueba se pueden combinar en juegos de prueba y escenarios de prueba. </p>
+
+<p>Ademas los juegos de pruebas  pueden ser automatizados con herramientas apropiadas</p>
+
+<p>El calendario de pruebas define el orden de la ejecucion de los procedimeintos de prueba y la automatizacion de pruebas</p>
+
+<h2 id="toc_3">Categorias de tecnicas de diseño de prueba</h2>
+
+<h3 id="toc_4">Metodos basados en la especificaion - Caja Negra</h3>
+
+<p>Los casos de prueba se obtienen a partir del analisis de la especificion funcional y no funcional del objeto de pruebas</p>
+
+<p>La funcionalidad es el foco de las pruebas</p>
+
+<h3 id="toc_5">Metodos basados en la estructura - Caja Blanca - Prueba basada en el flujo de control</h3>
+
+<p>El foco de atencion es la estructura del codigo/sistema y su estructura</p>
+
+<h3 id="toc_6">Metodos basados en la experiencia</h3>
+
+<p>La fuente para el diseño de los casos de prueba son el conocimiento y la experiencia del objeto de pruebas</p>
+
+<p>Se detectan posible puntos debiles, posibles errores o errores detectados anteriormente</p>
+
+<h2 id="toc_7">Tecnicas de Caja Negra o basadas en la especificacion</h2>
+
+<p>Tienen como finalidad la verificacion de la correcion y completitud de una funcion.</p>
+
+<p><code>Se cubrieron todas las funcionalidades, todos los resultados son los correctos</code></p>
+
+<h3 id="toc_8">Tipos</h3>
 
 <ul>
 <li><strong>Particiones de equivalencia</strong></li>
+<li><strong>Análisis de Valores Limite</strong></li>
+<li><strong>Tablas de Desición</strong></li>
+<li><strong>Pruebas de Transición de Estado</strong></li>
+<li><strong>Pruebas de caso de uso</strong></li>
+<li><strong>Pruebas de humo</strong></li>
+<li><strong>Pruebas estadisticas</strong></li>
 </ul>
+
+<h4 id="toc_9"><strong>Particiones de equivalencia</strong></h4>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Uo2xvx7zhwo" frameborder="0" allowfullscreen></iframe>
 
-<ul>
-<li><strong>Análisis de Valores Limite</strong></li>
-</ul>
+<div><pre><code class="language-none">Coberutura(CE)  =   
+
+   Numero de CE Probadas 
+
+   _____________________  * 100
+
+   Numero de CE Definidas</code></pre></div>
+
+<h4 id="toc_10"><strong>Análisis de Valores Limite</strong></h4>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7FMFXLmu-sw" frameborder="0" allowfullscreen></iframe>
 
-<ul>
-<li><strong>Tablas de Desición</strong></li>
-</ul>
+<h4 id="toc_11"><strong>Tablas de Desición</strong></h4>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6g9cYF0_J7Q" frameborder="0" allowfullscreen></iframe>
 
-<ul>
-<li><strong>Pruebas de Transición de Estado</strong></li>
-</ul>
+<h4 id="toc_12"><strong>Pruebas de Transición de Estado</strong></h4>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/98LWGvhVSpE" frameborder="0" allowfullscreen></iframe>
 
-<ul>
-<li><strong>Pruebas de caso de uso</strong></li>
-</ul>
+<h4 id="toc_13"><strong>Pruebas de caso de uso</strong></h4>
 
-<h2 id="toc_2">Tecnicas de Caja Blanca</h2>
+<h2 id="toc_14">Tecnicas de caja Blanca o basadas en a estructura - Prueba basada en el flujo de control</h2>
 
+<h2 id="toc_15">Tecnicas basadas en la experiencia</h2>
 
-
-
+<h2 id="toc_16">Seleccion de las tecnicas de prueba</h2>
 
 
 
 
 
-
-
+    <!-- End markdown code -->
 
 
 
