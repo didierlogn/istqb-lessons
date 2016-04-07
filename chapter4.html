@@ -24,7 +24,7 @@
     <section class="main-content">
 
     <!-- <!-- Markdown code -->
-<h1 id="toc_0">Capitulo 4</h1>
+    <h1 id="toc_0">Capitulo 4</h1>
 
 <h2 id="toc_1">Proceso de desarrollo de pruebas</h2>
 
@@ -158,13 +158,271 @@ Si hay un cambio se puede determinar cuales casos de prueba son afectados </p>
 
 <h4 id="toc_13"><strong>Pruebas de caso de uso</strong></h4>
 
+<p>Los casos de prueba se obtienen directamente de los casos de uso creados, cada caso de uso tiene un caso de prueba, cada alternativa del caso de uso debe tner tambien un caso de prueba.</p>
+
+<p>Estos casos de uso se definen como la interaccion de un usuario con el sistema generalmente se utiliza el diagrama de casos de uso UML.</p>
+
+<p>Contienen: </p>
+
+<ul>
+<li>Precondiciones</li>
+<li>Resultados esperados / Comportamiento del sistema</li>
+<li>Post condiciones</li>
+</ul>
+
+<p>Se utilizan en las pruebas de sistema y las pruebas de aceptacion.</p>
+
+<p>Su principal desventaja es que no se pueden obtener casos de prueba adicionales directo del caso de uso sino que hay que recurir a otros documentos para obtener mas contexto acerca del sistema.</p>
+
 <h2 id="toc_14">Tecnicas de caja Blanca o basadas en a estructura - Prueba basada en el flujo de control</h2>
 
-<h2 id="toc_15">Tecnicas basadas en la experiencia</h2>
+<p>Son tecnicas q se ejecutan en los niveles de prueba de componente, integracion y de sistema, se utilizan herramientas para una mejor calidad de pruebas</p>
 
-<h2 id="toc_16">Seleccion de las tecnicas de prueba</h2>
+<h3 id="toc_15">Cobertura de sentencia</h3>
 
+<p>Se basa en el porcentaje de sentencias ejecutables que son ejecutados por las pruebas. Se utiliza el grafo de flujo de control.</p>
 
+<p><strong>El objetivo de prueba es lograr la cobertura de un porcentaje especifico de todas las sentencias</strong></p>
+
+<div><pre><code class="language-none">Cobertura de sentencia = 
+
+   Numero de sentencias ejecutadas 
+   
+   ------------------------------- * 100%
+   
+   Numero total de sentencias
+</code></pre></div>
+
+<p>Con este metodo se pueden encontar sentencias q nunca se ejecutan en el sistema, ademas si una funcionalidad no esta implementada este metodo no podra determinarlo dado que el mismo se basa solo en lo que esta escrito en el codido y sus sentencias</p>
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/9tJbunCrOmE" frameborder="0" allowfullscreen></iframe>
+
+<h3 id="toc_16">Cobertura  de decision</h3>
+
+<p>Se basa en el porcentaje de resultados de decision que son ejecutados por las pruebas</p>
+
+<p>Se trata de cubrir con casos de prueba cada arista del grafo de flujo de control al menos una vez.</p>
+
+<p><strong>El objetivo de prueba es lograr la cobertura de un porcentaje especifico de todas las desiciones</strong></p>
+
+<div><pre><code class="language-none">Cobertura de decision = 
+
+   Numero de decisiones ejecutadas 
+   
+   ------------------------------- * 100%
+   
+   Numero total de decisiones
+</code></pre></div>
+
+<p>Lograr una cobertura de 100% de condicion al menos necesita los mismos casos de prueba que se requieren para una cobertura de 100% de sentencia</p>
+
+<h3 id="toc_17">Cobertura de de condicion</h3>
+
+<p>Se basa en el porcentaje  de todos los resultados individuales de condicion que afectan los resultados </p>
+
+<p>Se tienen en cuenta la complejidad de una condision que este constituida por varias condiciones individuales. Ejemplo  </p>
+
+<p><code>If ((a&gt;2) Or (b&lt;8))</code></p>
+
+<p>Se toma cada una de las condiciones individuales de la condicion y a partir de ellos se generan casos de prueba.</p>
+
+<h4 id="toc_18">Cobertura de condicion simple</h4>
+
+<p>Para generar los casos de prueba cada condicion individual <strong>debe tomar al menos una vez</strong> los valores de verdadero y falso.</p>
+
+<p>Ejemplo</p>
+
+<div><pre><code class="language-none">
+If ((a&gt;2) Or (b&lt;8))
+</code></pre></div>
+
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>Resultado de la condicion</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>a = 6 =&gt; True</td>
+<td>b = 9 =&gt; False</td>
+<td>(a=6) OR (b = 9) =&gt; <strong>True</strong></td>
+</tr>
+<tr>
+<td>a = 1 =&gt; False</td>
+<td>b = 2  =&gt; True</td>
+<td>(a=1) OR (b = 2) =&gt; <strong>True</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p>En este caso solo se esta tomando 1 vez cada valor y se esta evaluando la condicion.</p>
+
+<h4 id="toc_19">Cobertura de condicion multiple</h4>
+
+<p>Para generar los casos de prueba cada condicion individual debe tomar <strong>TODOS</strong> los valores de verdadero y falso.</p>
+
+<p>Ejemplo</p>
+
+<div><pre><code class="language-none">
+If ((a&gt;2) Or (b&lt;8))
+</code></pre></div>
+
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>Resultado de la condicion</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>a = 6 =&gt; True</td>
+<td>b = 9 =&gt; False</td>
+<td>(a=6) OR (b = 9) =&gt; <strong>True</strong></td>
+</tr>
+<tr>
+<td>a = 6 =&gt; True</td>
+<td>b = 2 =&gt; True</td>
+<td>(a=6) OR (b = 2) =&gt; <strong>True</strong></td>
+</tr>
+<tr>
+<td>a = 1 =&gt; False</td>
+<td>b = 2  =&gt; True</td>
+<td>(a=1) OR (b = 2) =&gt; <strong>True</strong></td>
+</tr>
+<tr>
+<td>a = 1 =&gt; False</td>
+<td>b = 9  =&gt; False</td>
+<td>(a=1) OR (b = 9) =&gt; <strong>False</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p>En este caso solo se esta tomando Todos los posibles valores y se esta evaluando la condicion, lo que genera 4 casos de prueba no solo dos como en condicion simple.</p>
+
+<p>En este tipo de prueba los casos de prueba crecen de manera exponencial, en la formula 2N [^math]</p>
+
+<h4 id="toc_20">Minima Cobertura de condicion multiple</h4>
+
+<h3 id="toc_21">Cobertura de camino</h3>
+
+<p>Se basa en el porcentaje de caminos del programa que han sido ejecutados por las pruebas, incluye todos los caminos dentro de un bucle, por lo que cada camino del bucle es un caso de prueba separado, lo que ademas genereraria una explocion de casos de prueba.</p>
+
+<p>Esta es brinda una cobertura aun mas exhaustiva que la cobertura de sentencia y de condicion.</p>
+
+<p><strong>El objetivo de prueba es lograr la cobertura de un porcentaje especifico de todos los caminos</strong></p>
+
+<div><pre><code class="language-none">Cobertura de caminio = 
+
+   Numero de caminos cubiertos
+   
+   ------------------------------- * 100%
+   
+   Numero total de caminos
+</code></pre></div>
+
+<h2 id="toc_22">Tecnicas basadas en la experiencia - Pruebas intuitivas</h2>
+
+<p>Se basan en la intuicion y experiencia del probador, ya sea como usuario del sistema, o experiencias con un sistema similar en el pasado o conocimiento de que algun miembro del equipo puede generar defectos debido a su poca experiencia.</p>
+
+<p>Lo que le permite tener la intucion de saber donde pueden estar los defectos, la experiencia de saber cuales y donde han sido detectados anteriormente los defectos y donde hay mas probabilidades por la complejidad del proyecto que existan mas defectos.</p>
+
+<p><code>Donde se han acumulado los errrores en el pasado?</code></p>
+
+<p><code>Donde falla este software normalmente?</code></p>
+
+<p>Son un complemento ideal para las pruebas sistematicas por lo que se deberia tratar como una tarea adicional en el proceso de pruebas. Tienen el beneficion que estos pueden detectar defectos q no se detectarian con las pruebas sistematicas.</p>
+
+<p>Estaa incluyen <strong>prediccion de errores</strong> y <strong>pruebas exploratorias</strong></p>
+
+<p><strong>La predicionn de defectos</strong> se basa en comprobar la lista de defectos, que han sido enumerados y documentados con anterioridad, por lo que se generan nuevos casos de prueba en base a esta lista con el fin de tratar de reproducir los defectos que estan en la lista. Un factor muy importante es que si se encuentra un nuevo defecto este debe ser añadido a la lista con el fin de ser tomado en cuenta en futuros proyectos </p>
+
+<p><strong>Las pruebas exploratorias</strong> son apropiadas cuando la base de prueba es poco estructurada y cuando el tiempo de prueba es poco.
+Su procedimiento es </p>
+
+<ul>
+<li>Revisar partes del objecto de prueba</li>
+<li>Ejecutar un # reducido de casos de prueba</li>
+<li>Analisar los resultados </li>
+<li>Repetir las acciones anteriores expandiendo los casos de prueba en base a lo aprendido en la iteracion anterior</li>
+</ul>
+
+<blockquote>
+<p><strong>Carta de pruebas</strong></p>
+
+<blockquote>
+<p>Contiene los objetivos de las pruebas y los tiempos de ejecucion de las mismas</p>
+</blockquote>
+</blockquote>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RQRkRLYujWA" frameborder="0" allowfullscreen></iframe>
+
+<h2 id="toc_23">Seleccion de las tecnicas de prueba</h2>
+
+<p>La seleccion de tecnicas de prueba dependen de varios factores</p>
+
+<ul>
+<li>Estado del la informacion del objeto de pruebas 
+
+<ul>
+<li>Tengo el codigo para realizar pruebas de caja blanca? </li>
+<li> la documentacion esta completa para poder realizar pruebas de caja negra?</li>
+</ul></li>
+<li>Objectivos de la prueba predominantes
+
+<ul>
+<li>Se ha solicitado explicitamente un tipo de prueba (Funcionales, Stress, Automatizadas)</li>
+</ul></li>
+<li>Riesgos<br>
+
+<ul>
+<li>El sistema sera utilizado con una alta frecuencia</li>
+<li>Hay estandares legales/ contracturales que me permitan realizar la prueba</li>
+</ul></li>
+<li>El proyecto
+
+<ul>
+<li>Tengo el tiempo necesario para realizar las pruebas</li>
+<li>Que pasa si no tengo finalizado todo el juego de pruebas segun lo planeado</li>
+</ul></li>
+<li>Caracteristicas del objeto de pruebas
+
+<ul>
+<li>Esta el objeto de pruebas disponible</li>
+<li>Esta el ambiente de pruebas listo</li>
+</ul></li>
+<li>Requisitos contracturales
+
+<ul>
+<li>Hay alguna norma que determine el objetivo especifico de las pruebas</li>
+<li>Estan todos los documentos listos cuando se requirieron</li>
+</ul></li>
+<li>Mejores practicas
+
+<ul>
+<li>Que enfoques se han ejecutado en sistemas similares</li>
+<li>Que experiencia se han obtenido de estas estructuras anteriormente</li>
+</ul></li>
+<li>Niveles de prueba
+
+<ul>
+<li>Que niveles de prueba seran ejecutados con las pruebas</li>
+</ul></li>
+</ul>
+
+<p>Los diferentes miembros del equipo tienen enfoques distintos al momento de plantear el diseño de pruebas</p>
+
+<p>El jefe de proyecto velara porque el sistema tenga la calidad requerida y ademas se cumplan con el tiempo y presupuesto del proyecto</p>
+
+<p>El cliente velara por recibir un producto con la mas alta calidad y que ademas no se sobrepase ni el tiempo ni el presupuesto</p>
+
+<p>El jefe de pruebas velara por ejecutar las pruebas necesarias para evaluar la calidad del sistema, que se tengan los recursos necesarios para ejecutar todas las tareas de prueba, ademas de evaluar y analizar la calidad alcanzada por el sistema.                         </p>
 
 
 
