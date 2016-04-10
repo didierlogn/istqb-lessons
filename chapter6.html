@@ -22,8 +22,309 @@
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="welcome-to-isqtb-lessons" class="anchor" href="#welcome-to-isqtb-lessons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to ISQTB Lessons.</h3>
+      <!-- Markdown code -->
+
+<h1 id="toc_0">Capitulo 6  - Herramientas de prueba</h1>
+
+<h2 id="toc_1">Tipos de Herramientas</h2>
+
+<p>Las  herramientas dan soporte a las actividades de prueba descritas en el Capitulo 1, tambien hay herramientas para cada nivel del proceso de prueba, por ejemploo herramientas para la ejecucion de prueba, generacion de datos, que permites la exploracion del objeto de prueba, en fin cualquier herramienta que ayude al proceso de prueba, ejemplo una hojo de calculo.</p>
+
+<p><strong>Objetivos del uso de herramientas</strong></p>
+
+<ul>
+<li>Mejorar la eficiencia a travez de la automatizacion de tares repetitivas </li>
+<li>Automatizar actividades que requiren mucho esfuerzo si se hicieran de manera manual</li>
+<li>Mejorar la fiabilidad de las pruebas</li>
+</ul>
+
+<blockquote>
+<p><strong>Test Framework - Marco de prueba</strong></p>
+
+<blockquote>
+<p>Librerias de pruebas reutilizables y extendibles usadas para contruir herramientas de prueba
+Tipo de diseño de automatizacion de pruebas
+Proceso global de ejecucion de pruebas</p>
+</blockquote>
+</blockquote>
+
+<h3 id="toc_2">Clasificacion de herramientas de prueba</h3>
+
+<ul>
+<li><p>Herramientas  unitarias (Single Tools) dan soporte a una sola tarea o actividad</p></li>
+<li><p>Paquete de herramientas (Test tools suite) cubren varas tareas e integran herramientas unitarias</p></li>
+<li><p>Herramientas intrusivas que interfieren en la ejecucion del objeto de prueba y pueden generar comportamientos diferentes a los posibles resultados obtenidos en el entorno real, ejemplo los depuradores que introducen breakpoints y alteran la ejecucion</p></li>
+<li><p>Herramientas que no afectan la ejecucion del objeto de prueba</p></li>
+<li><p>Se pueden clasificar bajo otros criterios</p>
+
+<ul>
+<li>  Comerciales, gratuitas, codigo libre</li>
+<li>Por la actividad que soportan</li>
+<li>Herramientas desarrolladas de forma interna(In House), como Hojas de calculo, scripts de sql, bases de datos.</li>
+</ul></li>
+</ul>
+
+<h4 id="toc_3">Herramientas para el soporte de la gestion de pruebas</h4>
+
+<ul>
+<li><p><strong>Herramientas para gestion de pruebas</strong></p>
+
+<ul>
+<li>Se encarga de la administracion de los casos de prueba</li>
+<li>Permiten establecer metricas</li>
+<li>Permiten la planificacion de recursos y tiempo para las pruebas </li>
+</ul></li>
+<li><p><strong>Herramientas para gestion de requerimientos</strong></p>
+
+<ul>
+<li>   Repilacion de requerimientos</li>
+<li>   Asignacion de prioridades a los requerimientos</li>
+<li>   Establece la relacion entre caso de prueba y requerimientos</li>
+<li>   Identificacion de requisitos inconsistentes</li>
+</ul></li>
+<li><p><strong>Herramientas para gestion de incidentes / defectos</strong></p>
+
+<ul>
+<li>   Registro seguimiento de incidencias, defectos, anomalias</li>
+<li>   Almacen de solicitud de cambio</li>
+<li>   Permiten la priorizacion de los defectos</li>
+<li>   Permiten la evalucacion del progreso de los defectos</li>
+<li>   Determinal el ciclo de vida de los defectos</li>
+</ul></li>
+<li><p><strong>Herramientas para gestion de la configuracion</strong>  *    Seguimiento de las distintas versiones de los objetos de prueba</p>
+
+<ul>
+<li>   Gestion del versionamiento de los productos de soporte de prueba, configuraciones y otras herramientas</li>
+<li>   Administracion del codigo fuente y del codigo del objeto</li>
+</ul></li>
+</ul>
+
+<h4 id="toc_4">Herramientas para el soporte de pruebas estaticas</h4>
+
+<ul>
+<li><p><strong>Herramientas para el analisis estatico</strong></p>
+
+<ul>
+<li>  Cumpliento de estandares de programacion</li>
+<li>Analisis de la estructura del codigo</li>
+<li>Analisis del flujo de datos</li>
+<li>Analisis de metricas de complejidad del codigo</li>
+</ul></li>
+<li><p><strong>Herramientas de revision</strong></p>
+
+<ul>
+<li>Apoyo a la revision con listas de comprobacion, guias y cometarios de revision</li>
+<li>Documentacion de los resultados de la revision</li>
+<li>Evaluacion de los resultados de la revision</li>
+<li>Apoya la trazabilidad entre documentos y codigo fuente</li>
+</ul></li>
+<li><p><strong>Herramientas de modelado</strong></p>
+
+<ul>
+<li>Analisis de modelos de datos</li>
+<li>Analisis de documentos de especificacion/modelo de objetos y diagramas de estados</li>
+<li>Generar casos de prueba a base de dagrama</li>
+</ul></li>
+</ul>
+
+<h4 id="toc_5">Herramientas para el soporte de la especificacion de pruebas</h4>
+
+<ul>
+<li><strong>Herramientas de diseño de prueba</strong></li>
+<li><strong>Herramientas de preparacion de datos de prueba</strong></li>
+<li><strong>Generadores de datos asociados a la base de datos</strong></li>
+<li><strong>Generadores de datos de prueba en base en el codigo</strong></li>
+<li><strong>Generadores de datos de prueba asociados a la interfaz</strong></li>
+<li><strong>Generadores de datos de prueba en basados en la especificacion</strong></li>
+</ul>
+
+<h4 id="toc_6">Herramientas para el soporte de la ejecucion y registro de prueba</h4>
+
+<p>Apoyan a la ejecucion de pruebas en todos los nivels de prueba.</p>
+
+<ul>
+<li>Entrega de datos</li>
+<li>Registro del comportamiento de la salida</li>
+</ul>
+
+<p>Ejemplos de herramientas</p>
+
+<ul>
+<li><strong>Robots de prueba</strong>
+
+<ul>
+<li>Compara los resultados obtenidos contra los esperados</li>
+<li>Permiten la repeticion automatica de la secuencia de prueba utilizando el script de prueba</li>
+<li>Son apropiadas para pruebas de regresio y pruebas exploratorias</li>
+</ul></li>
+<li><p><strong>Depurador</strong></p>
+
+<ul>
+<li>Herramientas para la deteccion de errores en el codigo mediante la comprobacion de sentencias unitarias y condidciones</li>
+</ul></li>
+<li><p><strong>Comprobadores de prueba</strong></p>
+
+<ul>
+<li>  Comparan los resultados obtenidos con los esperados</li>
+</ul></li>
+<li><p><strong>Arnes de prueba o marco de trabajo para pruebas unitarias</strong></p>
+
+<ul>
+<li>Simulan el entorno del objeto(Mock objects)</li>
+</ul></li>
+<li><p><strong>Controladores de prueba (Test Drivers)</strong></p>
+
+<ul>
+<li>Permite acceder al objeto de prueba cuando las interfaces no han sido creadas </li>
+</ul></li>
+<li><p><strong>Stubs</strong></p>
+
+<ul>
+<li>Simulan la funcionalidad de un componente <strong>INVOCADO</strong><br></li>
+</ul></li>
+<li><p><strong>Herramientas de medicion de cobertura</strong></p>
+
+<ul>
+<li>Miden el porcentaje de un tipo de estructura de codigo especificada que ha sido ejecutada por un conjunto de pruebas
+*** Herramientas de prueba de seguridad**</li>
+<li>Evaluan las caracteristicas de seguridad del software</li>
+</ul></li>
+</ul>
+
+<h4 id="toc_7">Herramientas para el soporte de monitoreo y rendimiento</h4>
+
+<ul>
+<li><strong>Herramientas de analisis dinamico</strong>
+
+<ul>
+<li>  Detectan defectos cuando el software esta en ejecucion ejemplo fugas de memoria, asignacion de punteros, etc.</li>
+</ul></li>
+<li><strong>Herramientas de pruebas de rendimiento/carga/estres</strong>
+
+<ul>
+<li>Permiten medir el sistema bajo condiciones de cantidad de usuarios o transacciones durante un periodo determinado</li>
+</ul></li>
+<li><strong>Herramientas de monitoreo</strong>
+
+<ul>
+<li>  Analiza de forma continua los recursos del sistema y advierte de posbiles problemas del servicio</li>
+</ul></li>
+</ul>
+
+<h4 id="toc_8">Herramientas para necesidades especificas de  prueba</h4>
+
+<ul>
+<li><strong>Evalucion de la calidad de datos</strong>
+
+<ul>
+<li>Se enfocan en los datos, permiten revisar y verificar la conversion de los datos en base  a las reglas de migracion</li>
+</ul></li>
+</ul>
+
+<h2 id="toc_9">Uso efectivo de herramientas de prueba</h2>
+
+<p>El uso de herramientas implica costes y esfuerzos, como por ejemplo instalacion de la herramienta, adaptando la herramienta en la organizacion, el tiempo de transicion y esfuerzo en el uso de la herramienta. </p>
+
+<p><code>Las ventajas del suo de herramientas deben superar los costes.</code></p>
+
+<p><strong>Beneficios</strong></p>
+
+<ul>
+<li>Reduccion del trabajo repetitivo </li>
+<li>Iteracion de actividades identicas</li>
+<li>Mayor consistencia </li>
+<li>Facilidad de acceso a la informacion</li>
+<li>Mejor informacion a la toma de decisiones</li>
+</ul>
+
+<p><strong>Riesgos</strong> 
+* La funcionalidad de la herramienta no cumple las expectativas
+* La usabilidad de la herramienta no cumple las expectativas
+* Se han subestimado el tiempo y esfuerzo necesarios para lograr beneficios
+* Otros requisitos de calidad no han sido alcanzado
+* Se han subestimado los beneficios
+* Los costes se han subestimado
+* Excesiva dependencia de la herramienta
+* Desatencion del contol de versiones de los activos de prueba enla herramienta
+* Riesgo que el fabrican suspenda el desarrollo de la herramienta
+* Riesgo de pobre soporte, actualizacion y correccion de defectos
+* Expectativa que la herramienta resolvera todos los problemas de prueba</p>
+
+<p><code>Una herramienta nunca reemplazara un proceso inexiste o compensara un procediento mal diseñado</code> </p>
+
+<h2 id="toc_10">Introduccion de herramientas de prueba en una organizacion</h2>
+
+<p><code>Es un proceso exigente que debe ser controlado y gestionado</code></p>
+
+<p><strong>Pasos para la introduccion de herramientas</strong></p>
+
+<ul>
+<li>Evalucacion
+
+<ul>
+<li>Identificacion de las debilidades del proceso de prueba donde las herramientas </li>
+</ul></li>
+<li><p>Definicion de requisitos</p>
+
+<ul>
+<li>Definicion de las necesidades respecto a la herramienta</li>
+</ul></li>
+<li><p>Evaluacion</p>
+
+<ul>
+<li>Examinar una lista corta de herramientas, comprobando la conformidad con la funcionalidad requerida</li>
+</ul></li>
+<li><p>Prueba de concepto</p>
+
+<ul>
+<li>Probar y evaluar las herramientas bajo condiciones que se necesitan</li>
+</ul></li>
+<li><p>Evaluacion del fabricante</p>
+
+<ul>
+<li>Enumerar los posibles candidatos, caracteristicas, revisar el resultado y tomar la desicion de cual herramienta usar.</li>
+</ul></li>
+<li><p>El uso de la herramienta</p>
+
+<ul>
+<li>Identificar los requisitos internos para la preparacion</li>
+</ul></li>
+<li><p>Evaluacion de formacion - Training</p>
+
+<ul>
+<li>Validar las necesidades del equipo y realizar entrenamientos</li>
+</ul></li>
+<li><p>Relacion Coste-Beneficio</p></li>
+</ul>
+
+<h4 id="toc_11">Ventajas de un proyecto piloto</h4>
+
+<ul>
+<li>Llegar a conocer los puntos fuertes y debilidades de la herramienta</li>
+<li>Establecimiento de interfaces con otras herramientas</li>
+<li>Definir informes</li>
+<li>Evaluar si se cumple conlos beneficios esperados</li>
+<li>Estimar el costo</li>
+</ul>
+
+<div><pre><code class="language-none">No se debe introducir una herramienta sin el desarrollo de un piloto.
+De lo contrario esperar/contar con problemas de aceptacion</code></pre></div>
+
+<h4 id="toc_12">Factores de exito en el despliegue de software</h4>
+
+<ul>
+<li>Introducion paso a paso en la totalidad de la organizacion</li>
+<li>Hacer obligatorio el uso de la herramienta</li>
+<li>Son necesarias guias de usuario</li>
+<li>Los usuarios deben tener acceso a la formacion adecuada</li>
+<li>La experiencia adquirida debe estar disponible para todos los usuarios</li>
+<li>La herramienta debe ser sujeta de seguimiento para mejorar su aceptacion</li>
+<li>Reunir/recoger las lecciones aprendidas de todos los proyectos</li>
+</ul>
+
+
+
+      <!-- End Markdown code -->
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/didiercolo/istqb-lessons">Istqb-lessons</a> is maintained by <a href="https://github.com/didiercolo">didiercolo</a>.</span>
