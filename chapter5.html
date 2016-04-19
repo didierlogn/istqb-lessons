@@ -22,8 +22,515 @@
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="welcome-to-isqtb-lessons" class="anchor" href="#welcome-to-isqtb-lessons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to ISQTB Lessons.</h3>
+
+<!-- Markdown code -->
+
+
+<h1 id="toc_0">Capitulo 5 - Gestion de pruebas</h1>
+
+<h2 id="toc_1">Organizacion de pruebas</h2>
+
+<div><pre><code class="language-none">La gestion de pruebas debe verse como 
+la gestion del proyecto de prueba</code></pre></div>
+
+<div><pre><code class="language-none">El proceso de pruebas es una actividad que 
+cubre por completo el proceso de desarrollo 
+de software</code></pre></div>
+
+<table>
+<thead>
+<tr>
+<th>Actividad</th>
+<th>Resultado del trabajo</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Concepcion de pruebas</td>
+<td>Plan de pruebas estatico</td>
+</tr>
+<tr>
+<td>Planificacion de pruebas</td>
+<td>Plan de pruebas dinamico</td>
+</tr>
+<tr>
+<td>Control de pruebas</td>
+<td>Informe de estao, accion de control</td>
+</tr>
+<tr>
+<td>Pruebas de aceptacion</td>
+<td>Entrega del producto de software</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<div><pre><code class="language-none">Los equipos de prueba deberian ser independientes
+
+Ventajas 
+    - Imparcialidad
+    - Se pueden cuestionar hechos respecto de la base de pruebas
+    
+Desventajas
+    - Mayor esfuerzo en la comunicacion
+    - Los desarrolladores pierden el sentido de la responsabilidad
+
+    
+Conformacion de equipos
+    - Los probadores prueban sus propios programas
+    - Los probadores son miembros del equipo de desarrollo
+    - Los probadores son miembros del equipo de proyecto o estructura de la organizacion 
+    - Especialistas para tareas especificas
+    - Equipos de prueba externos</code></pre></div>
+
+<h3 id="toc_2">Perfiles del personal de pruebas</h3>
+
+<h4 id="toc_3">Jefe de pruebas o director de preubas (Test Manager)</h4>
+
+<ul>
+<li>Planifica, realiza seguimiento y control del proyecto de prueba </li>
+<li>Competencias necesarias
+
+<ul>
+<li>Gestion de pruebas y calidad de software</li>
+<li>Planificacion y control de pruebas</li>
+<li>Experiencia como jefe de proyecto</li>
+<li>Habilidades de gestor</li>
+</ul></li>
+</ul>
+
+<p><strong>Tareas del lider de prueba</strong>  </p>
+
+<ul>
+<li><p><strong>Planificacion de pruebas</strong></p>
+
+<ul>
+<li>Se realiza el plan maestro de pruebas</li>
+<li>Se definen hitos, presupuesto y prioridades</li>
+<li>Los riesgos</li>
+<li>Se seleccionan las herramientas con respecto a la automatizacion</li>
+<li>Si hay atrasos la planificacion de las pruebas debe ser modificada y adaptada</li>
+<li>Se definen los recursos, personal y equipo</li>
+<li>Se establecen metricas para el control de actividades de prueba</li>
+<li>Se debe tener en cuenta pruebas anteriores para ser tomadas como base para la planificacion</li>
+</ul></li>
+<li><p><strong>Planificacion del ciclo de prueba</strong></p>
+
+<ul>
+<li>El plan maestro de prueba es adaptado para describir cada una de los ciclos de prueba</li>
+</ul></li>
+<li><p><strong>Especificacion de pruebas</strong></p>
+
+<ul>
+<li>El objetivo primordial es encontrar la mayor cantidad de defectos con el menor esfuerzo </li>
+</ul></li>
+<li><p><strong>Estrategia de prueba</strong></p></li>
+<li><p><strong>Ejecucion, Medicion y control de pruebas</strong></p>
+
+<ul>
+<li>Compraracion de resultados esperados contra resultados obtenidos</li>
+<li>Todas las desviaciones deben ser informadas y tenidas en cuenta para tomar decisiones, ajustar las fechas de entrega, ajustar la cantidad de recursos</li>
+</ul></li>
+<li><p><strong>Introduccion de un sistema de gestion de incidencias adecuado</strong></p></li>
+<li><p>**Introduccion de un sistema de gestion de la configuracion **</p></li>
+<li><p>**Generacion de informes de resultado y progreso **</p>
+
+<ul>
+<li>El uso de herramientas y plantillas aumentan la calidad y reducen la carga de trabajo</li>
+<li>La gestion de prueba incluye la aceptacion de resultados, por lo que el producto debe cumplir con los requisitos y espeficaciones definidos. El jefe de proyecto y el jefe de pruebas deciden la aceptacion del objeto de prueba</li>
+</ul></li>
+<li><p><strong>Redaccion del plan de pruebas</strong></p></li>
+</ul>
+
+<div><pre><code class="language-none">Tareas de un jefe de pruebas: Iniciacion, control y suspencion de 
+pruebas y ciclos de prueba  </code></pre></div>
+
+<h4 id="toc_4">Diseñador de pruebas</h4>
+
+<ul>
+<li>Disena casos de prueba y <strong>establece el orden en el cual se ejecutaran los casos de prueba</strong></li>
+<li>Competencias necesarias
+
+<ul>
+<li>Conocimiento de desarrollo y de pruebas</li>
+<li>Conocimiento de ingenieria de software</li>
+<li>Conocimiento respecto a las especificaciones tecnicas</li>
+<li>Conocimiento de requisito funcionales</li>
+</ul></li>
+</ul>
+
+<h4 id="toc_5">Ingeniero en automatizacion de pruebas</h4>
+
+<ul>
+<li>Evalua las posibilidades de la automatizacion de las pruebas y las implementa</li>
+<li>Competencias necesarias
+
+<ul>
+<li>Experiencia como probador</li>
+<li>Conocimiento tecnico en el ambito de diseño y automatizacion de pruebas</li>
+<li>Conocimientos en programacion </li>
+<li>Amplios conocimientos en el uso de las herramientas utilizadas</li>
+</ul></li>
+</ul>
+
+<h4 id="toc_6">Administrador de prueba</h4>
+
+<ul>
+<li>Prepara y opera el entorno de pruebas, es el responsable del cumplimiento de los requisitos del sistema de prueba</li>
+<li>Competencias necesarias
+
+<ul>
+<li>Administracion de sistemas</li>
+<li>Conocimiento de herramientas de desarrollo y pruebas</li>
+<li>Sistemas de bases de datos</li>
+<li>Instalacion y operacion del software del sistema</li>
+</ul></li>
+</ul>
+
+<h4 id="toc_7">Probador (Tester)</h4>
+
+<ul>
+<li>Ejecuta las pruebas en base a las especificacion de los casos de prueba</li>
+<li>Competencias necesarias
+
+<ul>
+<li>Conocimiento basico de software</li>
+<li>Conocimiento basico de pruebas</li>
+<li>Operacion y uso de las herramientas de prueba</li>
+<li>Experiencia en la ejecucion de pruebas</li>
+<li>Conocimiento respecto a los objetos de pruebas</li>
+</ul></li>
+</ul>
+
+<p><strong>Tareas del probador</strong></p>
+
+<ul>
+<li><p><strong>Asiste en la implementacion de la planificacion de actividades de prueba</strong></p>
+
+<ul>
+<li>Revisa y comprueba planes de prueba</li>
+<li>Analiza  bases de prueba</li>
+</ul></li>
+<li><p><strong>Desarrolla los diseños de los casos de prueba y ejecucion de prueba</strong></p>
+
+<ul>
+<li>Desarrolla especificaciones de prueba</li>
+<li>Formula y selecciona casos de prueba</li>
+<li>Formula resultados esperados</li>
+<li>Prepara, configura y administra el entorno de prueba junto con el administrador de sistema</li>
+</ul></li>
+<li><p><strong>Revisa casos de prueba de otros probadores</strong></p></li>
+<li><p><strong>Asiste en la implementacion de la automatizacion de pruebas</strong></p></li>
+<li><p><strong>Ejecucion de casos de prueba</strong></p>
+
+<ul>
+<li>Ejecuta pruebas y registra resultados</li>
+<li>Evalua los resultados de las pruebas</li>
+</ul></li>
+</ul>
+
+<h4 id="toc_8">Experto tecnico</h4>
+
+<ul>
+<li>Asiste al equipo de pruebas</li>
+<li>Competencias necesarias
+
+<ul>
+<li>  Administracion y Diseño de bases de datos </li>
+<li>Experto en Interfaz de usuario</li>
+<li>Experto en redes</li>
+<li>Exporto en seguridad</li>
+</ul></li>
+</ul>
+
+<hr>
+
+<div><pre><code class="language-none">Competencias No tecnicas (Soft Skills) 
+
+    - Instinto politico y diplomatico
+    - Disposicion a preguntar sobre hechos aparentemente obvios
+    - Persistencia, fuerte personalidad
+    - Meticulosidad y creatividad
+    - Capacidad para tratar situaciones complejas
+    - Capacidad de aprender rapidamente
+</code></pre></div>
+
+<hr>
+
+<h2 id="toc_9">Planificacion y estimacion del proceso de prueba</h2>
+
+<p><code>La planificacion de las pruebas es planificacion de proyectos</code></p>
+
+<p><code>La planificacion de las pruebas es parte importante del aseguramiento de la calidad</code></p>
+
+<p>Todas las tareas y actividades deben ser planificadas con antelacion, se deben asignar recursos(personal, herramientas, presupuesto, ambientes), se debe contar con un plan maestro de pruebas, se debe definir el nivel de calidad.</p>
+
+<p>Esta planificacion es continua y debe ser controlada de forma constante, permitiendo asi hacer ajustes al plan maestro de pruebas para mitigar los riegos produciodos por los cambios.</p>
+
+<p>Se debe contar con un <strong>Plan de aseguramiento de calidad</strong>, el cual debe tener:</p>
+
+<ul>
+<li>Organizacion del proyecto</li>
+<li>Documentos que cubren el ciclo de vida del desarrollo</li>
+<li>Estandares, metodos y convenciones para el desarrollo</li>
+<li>Revisiones y auditorias </li>
+<li>Proceso de prueba</li>
+<li>Documentacion de errores y acciones correctivas</li>
+</ul>
+
+<h3 id="toc_10">Plan maestro de prueba - Master Test Plan</h3>
+
+<p>Es el primer paso en la planificacion de pruebas, cubre todas las fases del proceso de prueba, se fijan reglas de acuerdo a objetivos de prueba, recursos, actividades e hitos.</p>
+
+<h4 id="toc_11">Estructura del Plan Maestro de Prueba - IEEE 829</h4>
+
+<ol>
+<li>Introduccion</li>
+<li>Suposiciones</li>
+<li>Elementos de prueba</li>
+<li>Caracteristicas/prestaciones sujetas a pruebas</li>
+<li>Caracteristicas/prestaciones <strong>NO</strong> sujetas a pruebas</li>
+<li>Enfoque</li>
+<li>Criterios de paso/fallo</li>
+<li>Criterios de suspencion/renudacion</li>
+<li>Entregables de prueba</li>
+<li>Tareas de pruebas</li>
+<li>Necesidades relativas al entorno</li>
+<li>Responsabilidades</li>
+<li>Personal y formacon </li>
+<li>Calendario</li>
+<li>Riesgos y contingencias</li>
+<li>Aprobacion</li>
+</ol>
+
+<p>Actividades a realizar durante la planificacion  y estimacion del proceso de prueb</p>
+
+<ul>
+<li>Estrategia de prueba - Test Strategy</li>
+<li>Planificacion de recursos</li>
+<li>Soporte de herramientas</li>
+</ul>
+
+<h3 id="toc_12">Estrategia de prueba - Test Strategy</h3>
+
+<ul>
+<li>Describe los niveles de prueba a desarrollar </li>
+<li>Determina los criterios de entrada y salida, si como las metricas para evaluar estos criterios</li>
+<li>Evaluacion del riesgo, con el fin de enfocarse en las areas con mayor riesgo</li>
+</ul>
+
+<h4 id="toc_13">Criterios de entrada</h4>
+
+<p>Definen cuando comenzar a probar. Ejemplos de criterios de entrada</p>
+
+<ul>
+<li>Inicio de un nivel de prueba</li>
+<li>Cuando un conjunto de pruebas estan listas para la ejecucion</li>
+<li>Entorno de prueba disponible</li>
+<li>Herramientas de prueba listas</li>
+<li>Disponibilidad de codigo</li>
+<li>Disponibilidad de recursos humanos</li>
+<li>Tester preparados </li>
+</ul>
+
+<h4 id="toc_14">Criterios de salida</h4>
+
+<p>Indican la finalizacion de una fase de prueba. Ejemplos:</p>
+
+<ul>
+<li>% Cobertura de codigo</li>
+<li>% Cobertura de riesgo </li>
+<li>Razones de tiempo, costos o calidad</li>
+<li>Tasa de deteccion de errores</li>
+</ul>
+
+<h4 id="toc_15">Enfoques de prueba</h4>
+
+<p>El enfoque de pruebas es la implementacion de la estrategia de pruebas para un proyecto en especifico.</p>
+
+<ul>
+<li> <strong>Enfoque preventivo:</strong> Las pruebas son diseñadas tan pronto como sea posible</li>
+<li> <strong>Enfoque Reactivo:</strong> Primero el desarrollo y luego el diseño de las pruebas</li>
+<li> <strong>Enfoque analisto:</strong> Se basa en el analisis previo a las pruebas, ejemplo evaluando el riesgo </li>
+<li> <strong>Enfoque heuristico:</strong> Son pruebas reactivas, ejemplo pruebas exploratorias.</li>
+</ul>
+
+<h3 id="toc_16">Planificacion de recursos</h3>
+
+<ul>
+<li>Objetivo principal es estimar el esfuerzo de los miembros del equipo(Tiempo, tareas, herramientas)</li>
+<li>Las estimacione forman parte del plan maestro de prueba dinamico</li>
+<li>Por medio del calendario se gestionan la ejecucion de pruebas.</li>
+</ul>
+
+<h3 id="toc_17">Estimacion de pruebas</h3>
+
+<p>Factores para realizar la estimacion</p>
+
+<ul>
+<li>Caracteristicas del producto</li>
+<li>Calidad de la base de pruebas</li>
+<li>Requisitos de fiabilidad  y seguridad</li>
+<li>Complejidad del desarrollo</li>
+<li>Estabilidad de la organizacion, madurez de proceso utilizado</li>
+<li>Personal involucrado</li>
+</ul>
+
+<h4 id="toc_18">Estimacion experta</h4>
+
+<p><strong>Metodo</strong></p>
+
+<ol>
+<li>Identificar todas las tareas</li>
+<li>Obtener las estimaciones por parte de los responsables</li>
+<li>Sumar todas las estimaciones</li>
+<li>Incluir amortiguadores como colchon ante eventualidades</li>
+</ol>
+
+<p><strong>Ventajas</strong></p>
+
+<ol>
+<li>Las actividades estan relacionadas con la planeacion del proyecto</li>
+<li>A medida que avanza el proyecto, las estimaciones se pueden modificar </li>
+<li>Los miembros del equipo son los que en grupos pueden determinar las estimaciones</li>
+</ol>
+
+<p><strong>Desventajas</strong></p>
+
+<ol>
+<li>Proceso largo y caro</li>
+<li>No se estima los tiempos correctamente y por lo general se estima a la baja</li>
+<li>Los errores en cuanto a la planeacion son heredados</li>
+</ol>
+
+<h4 id="toc_19">Estimacion basada en analogias</h4>
+
+<p><strong>Metodo</strong></p>
+
+<ol>
+<li>Clasificar las tareas de prueba</li>
+<li>Buscar un proyecto <strong>anterior</strong> que tenga una tarea similar</li>
+<li>Utilizar el esfuerzo real de ella como base de estimacion </li>
+<li>Usar metricas(lineas de codigo, modulos,etc) para la estimacion total</li>
+<li>Incluir amortiguadores para considerar las correciones</li>
+</ol>
+
+<p><strong>Ventajas</strong></p>
+
+<ol>
+<li>Simple y efectivo</li>
+<li>Se logran valores muy precisos en la estimacion </li>
+</ol>
+
+<p><strong>Desventajas</strong></p>
+
+<ol>
+<li>Se requiere personal con experiencia</li>
+<li>En ocaciones se debate la validez de la estimacion </li>
+<li>Los proyectos con que se compara no son iguales.</li>
+</ol>
+
+<h4 id="toc_20">Estimacion basada en porcentajes</h4>
+
+<p><strong>Metodo</strong>
+1. El esfuerzo de las tareas de prueba se estima con un porcentaje de la totalidad de las actividades del proyecto</p>
+
+<div><pre><code class="language-none">La estimacion basada en porcentajes no tiene en cuenta el esfuerzo de 
+las pruebas de regresion, que pueden ser una parte sustancial de las 
+pruebas de mantenimiento y asociadas al cambio</code></pre></div>
+
+<p><strong>Ventajas</strong></p>
+
+<ol>
+<li>Es muy simple</li>
+<li>No requiere mucha informacion </li>
+</ol>
+
+<p><strong>Desventajas</strong></p>
+
+<ol>
+<li>No es precisa</li>
+<li>No se tiene claro el tiempo necesario por lo que genera debates dificiles</li>
+<li>Los porcentajes pueden variar de proyecto en proyecto</li>
+</ol>
+
+<hr>
+
+<h2 id="toc_21">Seguimiento y control del estado de pruebas</h2>
+
+<p>El seguimiento debe ser basado en consideraciones medibles</p>
+
+<ul>
+<li><strong>Metricas a base de errores:</strong> Tasa de deteccion de errores, defectos, resultados de repeticion de pruebas</li>
+<li><strong>Metricas en base a casos de prueba:</strong> cobertura de los casos de prueba, cobertura de codigo, cobertura de riesgo</li>
+<li><strong>Metricas en base a costos:</strong> Costo de deteccion de errores, costo de pruebas de regression, costo de recursos externos</li>
+</ul>
+
+<div><pre><code class="language-none">Los resultados deben ser informados de manera regular a los miembros del 
+equipo</code></pre></div>
+
+<h3 id="toc_22">Informacion de prueba</h3>
+
+<p>Toda la informacion de las actividades de prueba se consigna en los efectos de informacion de prueba (Test Reporting)</p>
+
+<h4 id="toc_23">Informe de estado de pruebas (IEEE-829)</h4>
+
+<ul>
+<li>Objecto(s) de prueba</li>
+<li>Nivel de prueba, ciclo de prueba, periodo de informe</li>
+<li>Avance de las pruebas, basadas en las metricas</li>
+<li>Recursos utilizados / Presupuesto consumido</li>
+<li>Hitos alcanzados</li>
+<li>Informe de defectos</li>
+<li>Evaluacion de riesgo</li>
+<li>Pronostico: Actividades planificadas para el proximo periodo de informe</li>
+<li>Evaluacion del estado general</li>
+</ul>
+
+<p>La frecuencia de los informes dependera de las fases del proyecto, al inicio puede ser cada 15 dias / mes, sin embargo en las fases criticas tiene que ser diaria / semanal</p>
+
+<p>Ademas al finalizar todas las pruebas se debe entregar el informe final </p>
+
+<div><pre><code class="language-none">Evaluacion de los informes - Como evaluar el estado general 
+
+- La evolucion es apropiada?
+- La ejecucion de pruebas es eficaz y eficientes? 
+- Las actividades estan alineadas con los objetivos de prueba?
+- Estan siendo alcanzados los objetivos de pruebas?
+- Cual es el estado de confianza con respecto al producto 
+en el estado actual progreso/evolucion/desarrollo?</code></pre></div>
+
+<h3 id="toc_24">Control de pruebas</h3>
+
+<p>El control de pruebas es una tarea de gestion, por lo tanto es responsabilidad del jefe de prueba</p>
+
+<p>Se deben tomar las medidas correctivas como respuestas a desviaciones del plan</p>
+
+<div><pre><code class="language-none">Evalucion y cierre de pruebas
+- Los criterios de salida son registrados como metricas de progreso en el avance de las pruebas
+- los criterios de salida son documentados en el informe de prueba para 
+su aprobacion 
+</code></pre></div>
+
+<h3 id="toc_25">Medidas de control de pruebas</h3>
+
+<ul>
+<li>Provision de resursos adicionales (Personas, presupuestos)</li>
+<li>Reduccion del esfuerzo aplicado al trabajo
+
+<ul>
+<li>Exclusion de variaciones de casos de prueba</li>
+<li>Simplificacion de objetos de prueba</li>
+<li>Reduccion de datos prueba</li>
+<li>Omision de casos de prueba</li>
+</ul></li>
+</ul>
+
+
+
+<!-- End Markdown code -->
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/didiercolo/istqb-lessons">Istqb-lessons</a> is maintained by <a href="https://github.com/didiercolo">didiercolo</a>.</span>
